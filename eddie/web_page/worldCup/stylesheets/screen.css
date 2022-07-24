@@ -1,0 +1,1340 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*zindex*/
+/*linear-gradient*/
+/*specify*/
+/*keyframes*/
+/*Responsive*/
+/*radius*/
+/*boxshadow*/
+/*POS*/
+/*clearfix*/
+/*changebg*/
+/*gridbox*/
+@media only screen and (min-width: 1025px) {
+  /* line 11, ../sass/screen.scss */
+  .mb_show {
+    display: none;
+  }
+
+  /* line 14, ../sass/screen.scss */
+  .wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: Microsoft JhengHei;
+    background-color: black;
+  }
+  /* line 20, ../sass/screen.scss */
+  .wrapper .zone01 {
+    width: 100%;
+    min-width: 1350px;
+    height: 1259px;
+    background: url(../img/zonebg_01_pc.jpg) center no-repeat;
+  }
+  /* line 25, ../sass/screen.scss */
+  .wrapper .zone01 .logo_h5 {
+    display: none;
+  }
+  /* line 28, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center {
+    position: relative;
+    width: 75%;
+    min-width: 1350px;
+    height: 1259px;
+    margin: 0 auto;
+  }
+  /* line 35, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center img {
+    display: none;
+  }
+  /* line 38, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo_bg_bg {
+    position: relative;
+    margin: 0 auto;
+    top: -10px;
+    height: 360px;
+    background: url(../img/main_slogan_pc.png) center no-repeat;
+    animation: ani_3_bg 4.5s;
+    opacity: 1;
+    overflow: hidden;
+  }
+  /* line 46, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo_bg_bg::after {
+    content: "";
+    position: absolute;
+    left: -300px;
+    top: 2px;
+    width: 655px;
+    height: 321px;
+    background: url(../img/light.png) center no-repeat;
+    animation: ani_3_light 4.5s infinite;
+  }
+  /* line 57, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo_bg {
+    position: relative;
+    margin: 0 auto;
+    top: -361px;
+    height: 360px;
+    background: url(../img/toplogo_empty.png) center no-repeat;
+    animation: ani_3_bg 4.5s;
+    opacity: 1;
+    /*&::before{
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 161px;
+        background: url(../img/main_slogan_pc.png) center no-repeat;
+        width: 1029px;
+        height: 319px;
+    }*/
+  }
+  /* line 75, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo {
+    position: relative;
+    margin: 0 auto;
+    top: -708px;
+    width: 1029px;
+    height: 319px;
+    background: url(../img/main_slogan_pc.png) center no-repeat;
+    animation: ani_3 4.5s;
+    opacity: 0;
+  }
+  /* line 84, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_left {
+    position: absolute;
+    top: 207px;
+    width: 484px;
+    height: 746px;
+    left: 16%;
+    background: url(../img/man_2_pc.png) center no-repeat;
+    -webkit-animation: ani_1 4.5s;
+    -moz-animation: ani_1 4.5s;
+    -ms-animation: ani_1 4.5s;
+    -o-animation: ani_1 4.5s;
+    animation: ani_1 4.5s;
+  }
+  /* line 93, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_left_blur {
+    position: absolute;
+    top: 207px;
+    width: 484px;
+    height: 746px;
+    left: 16%;
+    background: url(../img/man_2_pc_blur.png) center no-repeat;
+    animation: ani_1_blur 4.5s infinite;
+  }
+  /* line 102, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_right {
+    position: absolute;
+    top: 159px;
+    width: 534px;
+    height: 844px;
+    right: 25%;
+    background: url(../img/man_1_pc.png) center no-repeat;
+    -webkit-animation: ani_2 4.5s;
+    -moz-animation: ani_2 4.5s;
+    -ms-animation: ani_2 4.5s;
+    -o-animation: ani_2 4.5s;
+    animation: ani_2 4.5s;
+  }
+  /* line 110, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_right .soccor {
+    position: absolute;
+    top: 590px;
+    left: 165px;
+    width: 109px;
+    height: 108px;
+    background: url(../img/soccor.png) center no-repeat;
+  }
+  /* line 120, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_right_blur {
+    position: absolute;
+    top: 159px;
+    width: 534px;
+    height: 844px;
+    right: 27%;
+    background: url(../img/man_1_pc_blur.png) center no-repeat;
+    animation: ani_2_blur 4.5s infinite;
+  }
+  /* line 129, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .worldcup {
+    position: absolute;
+    bottom: 20px;
+    width: 203px;
+    height: 429px;
+    right: 20%;
+    background: url(../img/award_pc.png) center no-repeat;
+  }
+  /* line 137, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .textzone_01 {
+    position: absolute;
+    top: 989px;
+    left: 13%;
+  }
+  /* line 141, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .textzone_01 .title_static {
+    font-size: 27px;
+    color: #ffd800;
+    margin-bottom: 20px;
+  }
+  /* line 146, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .textzone_01 .textcontent_01 {
+    font-size: 16px;
+    color: white;
+    width: 60%;
+    line-height: 29px;
+    letter-spacing: 2px;
+  }
+  /* line 157, ../sass/screen.scss */
+  .wrapper .zone02 {
+    width: 100%;
+    min-width: 1350px;
+    height: 576px;
+    background: url(../img/zonebg_02_pc.jpg) center no-repeat;
+  }
+  /* line 162, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center {
+    position: relative;
+    width: 75%;
+    min-width: 1350px;
+    height: 576px;
+    margin: 0 auto;
+  }
+  /* line 169, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center ul.groupzone {
+    width: 70%;
+    margin: 0 auto;
+    top: 73px;
+    position: relative;
+    overflow: hidden;
+    /*.w258h246{
+        width: 258px;
+        height: 246px;
+        float: left;
+        margin: 0 3px 16px;
+    }
+    .group_A{
+        background: url(../img/group_a.png) center no-repeat;
+        background-size: 258px 246px;
+    }
+    .group_B{
+        background: url(../img/group_b.png) center no-repeat;
+        background-size: 258px 246px;
+    }
+    .group_C{
+        background: url(../img/group_c.png) center no-repeat;
+        background-size: 258px 246px;
+    }
+    .group_D{
+        background: url(../img/group_d.png) center no-repeat;
+        background-size: 258px 246px;
+    }
+    .group_E{
+        background: url(../img/group_e.png) center no-repeat;
+        background-size: 258px 246px;
+    }
+    .group_F{
+        background: url(../img/group_f.png) center no-repeat;
+        background-size: 258px 246px;
+    }
+    .group_G{
+        background: url(../img/group_g.png) center no-repeat;
+        background-size: 258px 246px;
+    }
+    .group_H{
+        background: url(../img/group_h.png) center no-repeat;
+        background-size: 258px 246px;
+    }*/
+  }
+  /* line 176, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center ul.groupzone li {
+    float: left;
+    margin: 0px 11px 18px;
+    width: calc(25% - 22px);
+  }
+  /* line 180, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center ul.groupzone li img {
+    width: 100%;
+  }
+  /* line 226, ../sass/screen.scss */
+  .wrapper .zone03 {
+    width: 100%;
+    min-width: 1350px;
+    height: 540px;
+    background: url(../img/zonebg_03_pc.jpg) center no-repeat;
+  }
+  /* line 231, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center {
+    position: relative;
+    width: 75%;
+    min-width: 1350px;
+    height: 540px;
+    margin: 0 auto;
+  }
+  /* line 238, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_leftzone {
+    position: absolute;
+    left: 4%;
+    top: 17px;
+    width: 722px;
+    height: 523px;
+    background: url(../img/sport_pc.png) center no-repeat;
+  }
+  /* line 246, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone {
+    position: absolute;
+    top: 102px;
+    right: 13%;
+    width: 30%;
+  }
+  /* line 251, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .divider_03 {
+    width: 8%;
+    height: 1px;
+    background-color: #656565;
+    margin: 29px auto 19px;
+  }
+  /* line 258, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .zone03_textz .title_static {
+    font-size: 27px;
+    color: #ffd800;
+    margin-bottom: 20px;
+  }
+  /* line 263, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .zone03_textz .textcontent_03 {
+    font-size: 16px;
+    color: white;
+    line-height: 29px;
+    letter-spacing: 2px;
+  }
+  /* line 270, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only {
+    font-size: 20px;
+    position: absolute;
+    background-color: #333a4b;
+    text-decoration: none;
+    padding: 18px 92px 18px 72px;
+    letter-spacing: 7px;
+    color: white;
+    left: 66px;
+    transition-duration: 0.6s;
+    border: 2px solid #7b7b7b;
+    margin: 46px 0 0;
+  }
+  /* line 282, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 187px;
+    width: 18px;
+    height: 20px;
+    background: url(../img/load_i.png) center no-repeat;
+    background-size: 90%;
+  }
+  /* line 292, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only:hover {
+    background-color: #6b7a9f;
+  }
+  /* line 299, ../sass/screen.scss */
+  .wrapper .btn_aria_h5 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 308, ../sass/screen.scss */
+  .mb_show {
+    display: none;
+  }
+
+  /* line 311, ../sass/screen.scss */
+  .wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: Microsoft JhengHei;
+    background-color: black;
+  }
+  /* line 317, ../sass/screen.scss */
+  .wrapper .zone01 {
+    width: 100%;
+    min-width: 767px;
+    height: 1259px;
+    background: url(../img/zonebg_01_pad.jpg) center no-repeat;
+  }
+  /* line 322, ../sass/screen.scss */
+  .wrapper .zone01 .logo_h5 {
+    display: none;
+  }
+  /* line 325, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center {
+    position: relative;
+    width: 75%;
+    min-width: 767px;
+    height: 1259px;
+    margin: 0 auto;
+    /*.mainlogo{
+        position: relative;
+        margin: 0 auto;
+        top: -708px;
+        width: 1029px;
+        height: 319px;
+        background: url(../img/main_slogan_pc.png) center no-repeat;
+        animation: ani_3 4.5s; opacity: 0;
+    }*/
+  }
+  /* line 332, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center img {
+    display: none;
+  }
+  /* line 335, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo_pad {
+    width: 96%;
+    height: 300px;
+    background: url(../img/main_slogan_pc.png) center no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -364px;
+    margin: 0 auto;
+  }
+  /* line 344, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo_bg_bg {
+    position: relative;
+    margin: 0 auto;
+    top: -10px;
+    height: 360px;
+    background: url(../img/main_slogan_pc.png) center no-repeat;
+    animation: ani_3_bg 4.5s;
+    opacity: 1;
+    overflow: hidden;
+    display: none;
+  }
+  /* line 353, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo_bg_bg::after {
+    content: "";
+    position: absolute;
+    left: -300px;
+    top: 2px;
+    width: 655px;
+    height: 321px;
+    background: url(../img/light.png) center no-repeat;
+    animation: ani_3_light 4.5s infinite;
+  }
+  /* line 364, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .mainlogo_bg {
+    position: relative;
+    margin: 0 auto;
+    top: -361px;
+    height: 360px;
+    background: url(../img/toplogo_empty.png) center no-repeat;
+    animation: ani_3_bg 4.5s;
+    opacity: 1;
+    /*&::before{
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 161px;
+        background: url(../img/main_slogan_pc.png) center no-repeat;
+        width: 1029px;
+        height: 319px;
+    }*/
+  }
+  /* line 391, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_left {
+    position: absolute;
+    top: 207px;
+    width: 484px;
+    height: 746px;
+    left: -44px;
+    background: url(../img/man_2_pc.png) center no-repeat;
+  }
+  /* line 400, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_left_blur {
+    position: absolute;
+    top: 207px;
+    width: 484px;
+    height: 746px;
+    left: 16%;
+    background: url(../img/man_2_pc_blur.png) center no-repeat;
+    animation: ani_1_blur_pad 4.5s infinite;
+  }
+  /* line 409, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_right {
+    position: absolute;
+    top: 159px;
+    width: 636px;
+    height: 844px;
+    right: -1%;
+    background: url(../img/man_1_pad.png) center no-repeat;
+    /*.soccor{
+        position: absolute;
+        top: 590px;
+        left: 165px;
+        width: 109px;
+        height: 108px;
+        background: url(../img/soccor.png) center no-repeat;
+        //@include css3(animation,ani_soccor 0.8s linear infinite);
+    }*/
+  }
+  /* line 427, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .man_right_blur {
+    position: absolute;
+    top: 159px;
+    width: 534px;
+    height: 844px;
+    right: 27%;
+    background: url(../img/man_1_pc_blur.png) center no-repeat;
+    animation: ani_2_blur_pad 4.5s infinite;
+  }
+  /* line 436, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .worldcup {
+    position: absolute;
+    bottom: 20px;
+    width: 203px;
+    height: 429px;
+    right: 2%;
+    background: url(../img/award_pc.png) center no-repeat;
+  }
+  /* line 444, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .textzone_01 {
+    position: absolute;
+    top: 989px;
+    left: 8%;
+  }
+  /* line 448, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .textzone_01 .title_static {
+    font-size: 27px;
+    color: #ffd800;
+    margin-bottom: 20px;
+  }
+  /* line 453, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center .textzone_01 .textcontent_01 {
+    font-size: 16px;
+    color: white;
+    width: 60%;
+    line-height: 29px;
+    letter-spacing: 2px;
+  }
+  /* line 464, ../sass/screen.scss */
+  .wrapper .zone02 {
+    width: 100%;
+    min-width: 767px;
+    height: 433px;
+    background: url(../img/zonebg_02_pad.jpg) center no-repeat;
+  }
+  /* line 469, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center {
+    position: relative;
+    width: 75%;
+    min-width: 767px;
+    height: 433px;
+    margin: 0 auto;
+  }
+  /* line 476, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center ul.groupzone {
+    width: 92%;
+    margin: 0 auto;
+    top: 38px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 483, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center ul.groupzone li {
+    float: left;
+    margin: 0px 3px 18px;
+    width: calc(25% - 6px);
+  }
+  /* line 487, ../sass/screen.scss */
+  .wrapper .zone02 .zone02_center ul.groupzone li img {
+    width: 100%;
+  }
+  /* line 494, ../sass/screen.scss */
+  .wrapper .zone03 {
+    width: 100%;
+    min-width: 767px;
+    height: 540px;
+    background: url(../img/zonebg_03_pad.jpg) center no-repeat;
+  }
+  /* line 499, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center {
+    position: relative;
+    width: 75%;
+    min-width: 767px;
+    height: 540px;
+    margin: 0 auto;
+  }
+  /* line 506, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_leftzone {
+    position: absolute;
+    left: 4%;
+    top: 17px;
+    width: 722px;
+    height: 523px;
+    background: url(../img/sport_pc.png) center no-repeat;
+    display: none;
+  }
+  /* line 515, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone {
+    position: relative;
+    top: 94px;
+    width: 83%;
+    margin: 0 auto;
+  }
+  /* line 520, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .divider_03 {
+    width: 8%;
+    height: 1px;
+    background-color: #656565;
+    margin: 14px auto 28px;
+  }
+  /* line 527, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .zone03_textz .title_static {
+    font-size: 27px;
+    color: #ffd800;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 533, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .zone03_textz .textcontent_03 {
+    font-size: 16px;
+    color: white;
+    line-height: 29px;
+    letter-spacing: 2px;
+  }
+  /* line 540, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only {
+    font-size: 20px;
+    position: relative;
+    background-color: #333a4b;
+    text-decoration: none;
+    padding: 18px 92px 18px 72px;
+    letter-spacing: 7px;
+    color: white;
+    top: 66px;
+    left: 184px;
+    transition-duration: 0.6s;
+    border: 2px solid #7b7b7b;
+    margin: 0 auto;
+  }
+  /* line 553, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 187px;
+    width: 18px;
+    height: 20px;
+    background: url(../img/load_i.png) center no-repeat;
+    background-size: 90%;
+  }
+  /* line 563, ../sass/screen.scss */
+  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only:hover {
+    background-color: #6b7a9f;
+  }
+  /* line 570, ../sass/screen.scss */
+  .wrapper .btn_aria_h5 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 579, ../sass/screen.scss */
+  .wrapper {
+    width: 100%;
+    font-family: Microsoft JhengHei;
+    overflow: hidden;
+    background-color: #161616;
+  }
+  /* line 584, ../sass/screen.scss */
+  .wrapper .zone01 {
+    width: 100%;
+  }
+  /* line 586, ../sass/screen.scss */
+  .wrapper .zone01 .logo_h5 {
+    width: 100%;
+    height: 68px;
+    background: url(../img/logo_h5.png) center no-repeat;
+    background-size: 160px 45px;
+  }
+  /* line 592, ../sass/screen.scss */
+  .wrapper .zone01 .zone01_center {
+    background: url(../img/zonebg_01_h5.jpg) top center no-repeat;
+    background-size: 100%;
+  }
+
+  /* line 599, ../sass/screen.scss */
+  .textzone_01 .title_static {
+    font-size: 27px;
+    color: #ffd800;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 606, ../sass/screen.scss */
+  .textzone_01 .textcontent_01 {
+    font-size: 16px;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 29px;
+    letter-spacing: 2px;
+  }
+
+  /* line 615, ../sass/screen.scss */
+  .zone02 {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* line 618, ../sass/screen.scss */
+  .zone02 .zone02_center {
+    width: 90%;
+    margin: 40px auto 0;
+  }
+  /* line 621, ../sass/screen.scss */
+  .zone02 .zone02_center .groupzone {
+    width: 100%;
+  }
+  /* line 623, ../sass/screen.scss */
+  .zone02 .zone02_center .groupzone li {
+    width: calc(50% - 6px);
+    float: left;
+    margin: 5px 3px;
+  }
+  /* line 627, ../sass/screen.scss */
+  .zone02 .zone02_center .groupzone li img {
+    width: 100%;
+  }
+
+  /* line 634, ../sass/screen.scss */
+  .zone03 {
+    margin-top: 20px;
+  }
+  /* line 638, ../sass/screen.scss */
+  .zone03 .zone03_center .zone03_leftzone img {
+    width: 100%;
+  }
+
+  /* line 645, ../sass/screen.scss */
+  .zone03_textz .title_static {
+    font-size: 27px;
+    color: #ffd800;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 652, ../sass/screen.scss */
+  .zone03_textz .textcontent_03 {
+    font-size: 16px;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 29px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+
+  /* line 663, ../sass/screen.scss */
+  .divider_03 img {
+    width: 100%;
+  }
+
+  /* line 667, ../sass/screen.scss */
+  .btn_only {
+    display: none;
+  }
+
+  /* line 670, ../sass/screen.scss */
+  .btn_aria_h5 {
+    background-color: #333a4b;
+    padding: 22px 10%;
+    margin: 25px 5% 33px;
+    animation: ani_8_h5 1.5s;
+    border: 2px solid #7b7b7b;
+  }
+  /* line 677, ../sass/screen.scss */
+  .btn_aria_h5 .btn_c_h5 {
+    position: relative;
+    margin: 0 auto;
+    width: 166px;
+    height: 26px;
+  }
+  /* line 682, ../sass/screen.scss */
+  .btn_aria_h5 .btn_c_h5 .btn_load_h5 {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 11px;
+  }
+  /* line 689, ../sass/screen.scss */
+  .btn_aria_h5 .btn_c_h5 .loadicon_h5 {
+    position: absolute;
+    width: 17px;
+    height: 30px;
+    background: url(../img/load_i.png) center no-repeat;
+    background-size: 104%;
+    left: 146px;
+    top: -2px;
+  }
+}
+@-webkit-keyframes ani_1 {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  20% {
+    opacity: 1;
+    left: 16%;
+  }
+}
+@-moz-keyframes ani_1 {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  20% {
+    opacity: 1;
+    left: 16%;
+  }
+}
+@-o-keyframes ani_1 {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  20% {
+    opacity: 1;
+    left: 16%;
+  }
+}
+@keyframes ani_1 {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  20% {
+    opacity: 1;
+    left: 16%;
+  }
+}
+@-webkit-keyframes ani_soccor {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes ani_soccor {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes ani_soccor {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ani_soccor {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes ani_2 {
+  0% {
+    opacity: 0;
+    right: 27%;
+  }
+  6% {
+    opacity: 0;
+    right: 27%;
+  }
+  25% {
+    opacity: 1;
+    right: 25%;
+  }
+}
+@-moz-keyframes ani_2 {
+  0% {
+    opacity: 0;
+    right: 27%;
+  }
+  6% {
+    opacity: 0;
+    right: 27%;
+  }
+  25% {
+    opacity: 1;
+    right: 25%;
+  }
+}
+@-o-keyframes ani_2 {
+  0% {
+    opacity: 0;
+    right: 27%;
+  }
+  6% {
+    opacity: 0;
+    right: 27%;
+  }
+  25% {
+    opacity: 1;
+    right: 25%;
+  }
+}
+@keyframes ani_2 {
+  0% {
+    opacity: 0;
+    right: 27%;
+  }
+  6% {
+    opacity: 0;
+    right: 27%;
+  }
+  25% {
+    opacity: 1;
+    right: 25%;
+  }
+}
+@-webkit-keyframes ani_3 {
+  0% {
+    opacity: 0;
+    top: -688px;
+  }
+  10% {
+    opacity: 0;
+    top: -688px;
+  }
+  30% {
+    opacity: 1;
+    top: -708px;
+  }
+  35% {
+    opacity: 1;
+    top: -708px;
+  }
+  40% {
+    opacity: 0;
+    top: -708px;
+  }
+  100% {
+    opacity: 0;
+    top: -708px;
+  }
+}
+@-moz-keyframes ani_3 {
+  0% {
+    opacity: 0;
+    top: -688px;
+  }
+  10% {
+    opacity: 0;
+    top: -688px;
+  }
+  30% {
+    opacity: 1;
+    top: -708px;
+  }
+  35% {
+    opacity: 1;
+    top: -708px;
+  }
+  40% {
+    opacity: 0;
+    top: -708px;
+  }
+  100% {
+    opacity: 0;
+    top: -708px;
+  }
+}
+@-o-keyframes ani_3 {
+  0% {
+    opacity: 0;
+    top: -688px;
+  }
+  10% {
+    opacity: 0;
+    top: -688px;
+  }
+  30% {
+    opacity: 1;
+    top: -708px;
+  }
+  35% {
+    opacity: 1;
+    top: -708px;
+  }
+  40% {
+    opacity: 0;
+    top: -708px;
+  }
+  100% {
+    opacity: 0;
+    top: -708px;
+  }
+}
+@keyframes ani_3 {
+  0% {
+    opacity: 0;
+    top: -688px;
+  }
+  10% {
+    opacity: 0;
+    top: -688px;
+  }
+  30% {
+    opacity: 1;
+    top: -708px;
+  }
+  35% {
+    opacity: 1;
+    top: -708px;
+  }
+  40% {
+    opacity: 0;
+    top: -708px;
+  }
+  100% {
+    opacity: 0;
+    top: -708px;
+  }
+}
+@-webkit-keyframes ani_3_bg {
+  0% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes ani_3_bg {
+  0% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes ani_3_bg {
+  0% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani_3_bg {
+  0% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ani_3_bg_pad {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes ani_3_bg_pad {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+@-o-keyframes ani_3_bg_pad {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+@keyframes ani_3_bg_pad {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ani_3_light {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  39% {
+    opacity: 0;
+    left: -300px;
+  }
+  40% {
+    opacity: 1;
+    left: -300px;
+  }
+  80% {
+    opacity: 1;
+    left: 1000px;
+  }
+  100% {
+    opacity: 0;
+    left: 1000px;
+  }
+}
+@-moz-keyframes ani_3_light {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  39% {
+    opacity: 0;
+    left: -300px;
+  }
+  40% {
+    opacity: 1;
+    left: -300px;
+  }
+  80% {
+    opacity: 1;
+    left: 1000px;
+  }
+  100% {
+    opacity: 0;
+    left: 1000px;
+  }
+}
+@-o-keyframes ani_3_light {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  39% {
+    opacity: 0;
+    left: -300px;
+  }
+  40% {
+    opacity: 1;
+    left: -300px;
+  }
+  80% {
+    opacity: 1;
+    left: 1000px;
+  }
+  100% {
+    opacity: 0;
+    left: 1000px;
+  }
+}
+@keyframes ani_3_light {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  39% {
+    opacity: 0;
+    left: -300px;
+  }
+  40% {
+    opacity: 1;
+    left: -300px;
+  }
+  80% {
+    opacity: 1;
+    left: 1000px;
+  }
+  100% {
+    opacity: 0;
+    left: 1000px;
+  }
+}
+@keyframes ani_1_blur {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  25% {
+    opacity: 0;
+    left: 20%;
+  }
+  28% {
+    opacity: 0.6;
+    left: 15%;
+  }
+  31% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 0;
+    left: 20%;
+  }
+}
+@keyframes ani_2_blur {
+  0% {
+    opacity: 0;
+    right: 26%;
+  }
+  30% {
+    opacity: 0;
+    right: 26%;
+  }
+  33% {
+    opacity: 0.6;
+    right: 24%;
+  }
+  36% {
+    opacity: 0;
+    right: 26%;
+  }
+  100% {
+    opacity: 0;
+    right: 26%;
+  }
+}
+@keyframes ani_1_blur_pad {
+  0% {
+    opacity: 0;
+    left: -5%;
+  }
+  25% {
+    opacity: 0;
+    left: -5%;
+  }
+  28% {
+    opacity: 0.6;
+    left: -9%;
+  }
+  31% {
+    opacity: 0;
+    left: -5%;
+  }
+  100% {
+    opacity: 0;
+    left: -5%;
+  }
+}
+@keyframes ani_2_blur_pad {
+  0% {
+    opacity: 0;
+    right: -1%;
+  }
+  30% {
+    opacity: 0;
+    right: -1%;
+  }
+  33% {
+    opacity: 0.6;
+    right: 5%;
+  }
+  36% {
+    opacity: 0;
+    right: -1%;
+  }
+  100% {
+    opacity: 0;
+    right: -1%;
+  }
+}

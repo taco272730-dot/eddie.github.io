@@ -1,0 +1,625 @@
+/*------reset-------*/
+body,figure{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4,p,figure,ul,li{
+    font-size: unset;
+    margin: unset;
+}
+/*------reset-------*/
+/*---------------table-------------*/
+ .table{
+    display: flex;
+    color: white;
+    border: 1px solid rgb(115, 115, 255);
+    background: rgba(0, 0, 0, 0.705);
+    margin: 0 40px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.table aside{
+    display: flex;
+}
+.table aside:first-child{
+    width: 25%;
+    background: rgba(115, 115, 255, 0.247);
+}
+.table aside:first-child li{
+    width: 100%;
+}
+.table aside:last-child{
+    width: 75%;
+    overflow-x: scroll;
+}
+.table aside:last-child li{
+    flex: 1;
+}
+.table aside li{
+    display: flex;
+    flex-direction: column;
+}
+.table aside li h1{
+    background: rgb(115, 115, 255);
+}
+.table aside li h2{
+    border-bottom: 1px solid rgb(115, 115, 255);
+}
+.table aside li h2:last-child{
+    border-bottom: unset;
+}
+.table aside li h1,.table aside li h2{
+    height: 80px;
+    /* padding: 0 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table aside li p{
+    font-size: 16px;
+}
+/*---------------table-------------*/
+/*---------------uniType-------------*/
+.uniOuter{
+    border: 1px solid rgb(115, 115, 255);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.705);
+    padding: 20px 40px;
+}
+/*---------------uniType-------------*/
+
+.wrapper{
+    width: 100%;
+    min-height: 1vh;
+    background: url(../images/sportGamingBg.jpg) center no-repeat fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.navBar_h5{
+    display: none;
+}
+.navBar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: black;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.navBar .logoZone{
+    width: 150px;
+    height: 50px;
+}
+.navBar .logoZone img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.navBar .topOption{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.navBar .topOption li{
+    color: white;
+    padding: 0 20px;
+    position: relative;
+    transition: .5s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navBar .topOption li a{
+    padding: 19px 0;
+}
+.navBar .topOption li .bottomLine{
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: rgb(85, 85, 255);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.navBar .topOption li:hover{
+    color: rgb(164, 164, 255);
+}
+.navBar .topOption li:hover .bottomLine{
+    width: 100%;
+}
+.topView_h5{
+    display: none;
+}
+.topView{
+    padding-top: 60px;
+    width: 100%;
+    height: 756px;
+    background: url(../images/banner.png) center 60px no-repeat;
+    background-size: 2560px;
+    position: relative;
+}
+.topView .mainLogo{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+.topView .mainLogo img{
+    width: 100%;
+}
+.topView .rewardSlogan{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+}
+.topView .rewardSlogan img{
+    width: 100%;
+}
+.activeBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 40px;
+    width: 500px;
+    height: 163px;
+    background: url(../images/activeBtn.png) center no-repeat;
+    background-size: contain;
+    transition: .5s;
+    animation: flush 2s infinite;
+}
+.activeBtn:hover{
+    transform: scale(1.1);
+}
+.activeBtn h1,.activeBtn h2{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+.activeBtn h1{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.activeBtn h2{
+    font-size: 26px;
+    margin-top: 10px;
+}
+.content{
+    width: 1150px;
+    margin: 0 auto;
+    /* height: 700px; */
+}
+.content section .beginning{
+    color: white;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0 40px 40px;
+}
+
+.zone{
+    padding-top: 60px;
+}
+.zone .zoneTitle{
+    height: 70px;
+    margin-bottom: 20px;
+}
+.zone .zoneTitle img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.zone .describeTitle{
+    color: white;
+    padding: 20px 40px;
+    font-size: 30px;
+    line-height: 29px;
+    margin: 0 0 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgb(85, 85, 255);
+}
+.zone .describe{
+    color: white;
+    padding: 20px 40px;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0 40px 20px;
+}
+.stepZone{
+    display: flex;
+    margin: 0 30px 30px;
+}
+.stepZone .stepElement{
+    margin: 0 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.stepZone .stepElement .stepHead{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.stepZone .stepElement .stepHead h1{
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(136, 177, 255);
+}
+.stepZone .stepElement .stepHead h2{
+    font-size: 40px;
+    line-height: 42px;
+}
+.stepZone .stepElement .stepBody{
+    margin-top: 20px;
+}
+.stepZone .stepElement .stepBody h3{
+    color: rgb(136, 177, 255);
+    margin-bottom: 10px;
+}
+.stepZone .stepElement .stepBody h3,.stepZone .stepElement .stepBody p{
+    line-height: 25px;
+}
+.rule{
+    padding: 0 150px 50px;
+}
+.rule li {
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+}
+.rule li h1{
+    margin-right: 20px;
+}
+.rule li p{
+    line-height: 26px;
+}
+
+.btnAria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.555);
+}
+.btnAria .gogoBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    transition: .5s;
+    margin: 0 20px;
+    transition: .5s;
+    animation: flush 2s infinite;
+}
+.btnAria .gogoBtn:hover{
+    transform: scale(1.1);
+}
+.btnAria .gogoBtn h1{
+    font-size: 30px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+.gogoBtn.registerBtn{
+    background: url(../images/registerBtn.png) center no-repeat;
+    background-size: contain;
+
+}
+.gogoBtn.homePageBtn{
+    background: url(../images/homePageBtn.png) center no-repeat;
+    background-size: contain;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.contact li{
+    display: flex;
+    align-items: center;
+    margin: 5px 30px;
+}
+.contact li figure{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background: #88b1ff;
+    background: linear-gradient(180deg,#88b1ff,#3062be);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact li figure img{
+    width: 20px;
+}
+.contact li h1{
+    color: white;
+}
+@media screen and (max-width: 1920px) {
+    .topView{
+        background-size: 1920px;
+        height: 627px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .content{
+        width: 100%;
+    }
+    .topView{
+        background-size: 1120px;
+        height: 430px;
+    }
+    .topView .rewardSlogan{
+        max-width: 753px;
+        width: 100%;
+    }
+    .rule {
+        padding: 0 10%;
+    }
+    .stepZone .stepElement{
+        margin: 0 10px;
+    }
+    .uniOuter{
+        padding: 20px 30px;
+    }
+    .topView .mainLogo{
+        top: 60px;
+        width: 160px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .topView{
+        padding-top: 50px;
+        background-position: center 50px;
+    }
+    .navBar{
+        display: none;
+    }
+    .navBar_h5{
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        background: black;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .navBar_h5 .logoZone{
+        width: 150px;
+        height: 40px;
+    }
+    .navBar_h5 .logoZone img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    /* .burgerBtn{
+        position: relative;
+        width: 30px;
+        height: 100%;
+        padding: 12px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    .burgerBtn .crossLine{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .burgerBtn li,.burgerBtn .crossLine{
+        height: 2px;
+        width: 100%;
+        background: white;
+    }
+    .burgerBtn.active li{
+        opacity: 0;
+    }
+    .burgerBtn.active .left{
+        transform: rotate(45deg);
+    } */
+    .burgerBtn{
+        width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .burgerBtn img{
+        width: 40%;
+    }
+
+    .optionLine{
+        position: fixed;
+        width: 40vw;
+        height: 100vh;
+        background: #200d58ef;
+        right: 0;
+        top: 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(40vw);
+        opacity: 0;
+        transition: .5s;
+    }
+    .optionLine.active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .optionLine a{
+        padding: 10px 0;
+    }
+    .optionLine .closeBtn{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .optionLine .closeBtn img{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 613px) {
+
+    .optionLine{
+        width: 60vw;
+        transform: translateX(60vw);
+    }
+    .topView{
+        display: none;
+    }
+    .topView_h5{
+        display: block;
+        margin-top: 50px;
+    }
+    .topView_h5 img{
+        width: 100%;
+    }
+    .activeBtn{
+        width: 287px;
+        height: 99px;
+        margin-bottom: 0;
+    }
+    .activeBtn h1{
+        font-size: 12px;
+    }
+    .activeBtn h2{
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .content section .beginning{
+        margin: 0 20px 20px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .zone{
+        padding-top: 50px;
+    }
+    .zone .zoneTitle{
+        height: 30px;
+        transform: scale(1.3);
+    }
+    .zone .describe{
+        font-size: 13px;
+        line-height: 20px;
+        padding: 0;
+        margin: 0 20px 20px;
+    }
+    .zone .describeTitle{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .table{
+        margin: 0 20px 20px;
+    }
+    .table aside:first-child{
+        width: 35%;
+    }
+    .table aside:last-child{
+        width: 75%;
+    }
+    .table aside:last-child::-webkit-scrollbar{
+        display: none;
+    }
+    .table aside:last-child li{
+        min-width: 135px;
+    }
+    .table aside:last-child,.table aside:last-child li:last-child h1{
+        border-radius: 0 20px 0 0 ;
+    }
+    .table aside li h1,.table aside li h2{
+        height: 57px;
+    }
+    .table aside li p{
+        font-size: 14px;
+    }
+    .stepZone{
+        flex-direction: column;
+    }
+    .stepZone .stepElement{
+        margin: 0 20px 20px;
+    }
+    .stepZone .stepElement .stepBody p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .rule{
+        padding: 0 20px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .contact{
+        padding: 0;
+    }
+    .contact li{
+        margin: 5px;
+    }
+    .btnAria{
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .btnAria .gogoBtn{
+        margin: 0 13px 10px;
+        width: 287px;
+    }
+    .btnAria .gogoBtn h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@keyframes flush {
+    0% {
+        filter: brightness(0.6);
+    }
+    50% {
+        filter: brightness(1.7);
+    }
+    100% {
+        filter: brightness(0.6);
+    }
+  }
+

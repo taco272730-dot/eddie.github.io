@@ -1,0 +1,155 @@
+@mixin size($w,$h:$w){
+    width: $w ;
+    height: $h ;
+}
+/*zindex*/
+
+@mixin zindex() {
+    z-index: 999;
+}
+
+/*linear-gradient*/
+@mixin linear-gradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin ellipsistext() {
+overflow : hidden;
+text-overflow : ellipsis;
+white-space : nowrap; 
+}
+
+/*specify*/
+
+@mixin css3($property, $value) {
+    @each $prefix in -webkit-,
+    -moz-,
+    -ms-,
+    -o-,
+    '' {
+        #{$prefix}#{$property}: $value;
+    }
+}
+
+
+/*keyframes*/
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+
+/*Responsive*/
+
+@mixin Responsive($point) {
+    @if $point==large {
+        @media (min-width: 2000px) {
+            @content;
+        }
+    }
+    @else if $point==medium {
+        @media (min-width: 1200em) {
+            @content;
+        }
+    }
+    @else if $point==small {
+        @media (min-width: 640em) {
+            @content;
+        }
+    }
+}
+
+@mixin range-width-in( $min: 0, $max: 0){
+    @if $max == 0{
+        @media screen and (min-width: $min){
+            @content;
+        }
+    }@else{
+        @media screen and (min-width: $min) and (max-width: $max){
+            @content;
+        }
+    }
+}
+
+
+/*radius*/
+
+@mixin border-radius($angle) {
+    border-radius: $angle;
+    -webkit-border-radius: $angle;
+    -moz-border-radius: $angle;
+    -ms-border-radius: $angle;
+    -o-border-radius: $angle;
+}
+
+
+/*boxshadow*/
+
+@mixin boxshadow($shx, $shy, $shblur, $shcolor) {
+    box-shadow: $shx $shy $shblur $shcolor;
+    -webkit-box-shadow: $shx $shy $shblur $shcolor;
+    -moz-box-shadow: $shx $shy $shblur $shcolor;
+    -ms-border-radius: $shx $shy $shblur $shcolor;
+    -o-box-shadow: $shx $shy $shblur $shcolor;
+}
+
+
+/*POS*/
+
+@mixin POS($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+
+/*clearfix*/
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+/*changebg*/
+
+@mixin bg($name, $bg) {
+    background: url("../images/#{$name}.#{$bg}");
+    width: image-width("../images/#{$name}.#{$bg}");
+    height: image-height("../images/#{$name}.#{$bg}");
+}
+/*gridbox*/
+
+@mixin grid($cols, $mgn){
+    float: left;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+    width: ((100% - (( $cols - 1) * $mgn)) / $cols );
+    &:nth-child(#{$cols}n){
+        margin-right: 0;
+    }
+}

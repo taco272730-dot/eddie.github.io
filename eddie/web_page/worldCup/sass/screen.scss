@@ -1,0 +1,900 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "mixin.scss";
+
+//------------------------------PC--------------------
+@media only screen and (min-width: 1025px){
+    .mb_show{
+        display: none;
+    }
+    .wrapper{
+        overflow-x: hidden;
+        width: 100%;
+        //height: 100vh;
+        font-family: Microsoft JhengHei;
+        background-color: black;
+        .zone01{
+            width: 100%;
+            min-width: 1350px;
+            height: 1259px;
+            background: url(../img/zonebg_01_pc.jpg) center no-repeat;
+            .logo_h5{
+                display: none; 
+            }
+            .zone01_center{
+                position: relative;
+                width: 75%;
+                min-width: 1350px;
+                height: 1259px;
+                //background-color: aqua;
+                margin: 0 auto;
+                img{
+                    display: none;
+                }
+                .mainlogo_bg_bg{
+                    position: relative;
+                    margin: 0 auto;
+                    top: -10px;
+                    height: 360px;
+                    background: url(../img/main_slogan_pc.png) center no-repeat;
+                    animation: ani_3_bg 4.5s; opacity: 1;
+                    overflow: hidden;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: -300px;
+                        top: 2px;
+                        width: 655px;
+                        height: 321px;
+                        background: url(../img/light.png) center no-repeat;
+                        animation: ani_3_light 4.5s infinite;
+                    }
+                }
+                .mainlogo_bg{
+                    position: relative;
+                    margin: 0 auto;
+                    top: -361px;
+                    height: 360px;
+                    //display: inline;
+                    background: url(../img/toplogo_empty.png) center no-repeat;
+                    animation: ani_3_bg 4.5s; opacity: 1;
+                    /*&::before{
+                        content: "";
+                        position: absolute;
+                        top: 13px;
+                        left: 161px;
+                        background: url(../img/main_slogan_pc.png) center no-repeat;
+                        width: 1029px;
+                        height: 319px;
+                    }*/
+                }
+                .mainlogo{
+                    position: relative;
+                    margin: 0 auto;
+                    top: -708px;
+                    width: 1029px;
+                    height: 319px;
+                    background: url(../img/main_slogan_pc.png) center no-repeat;
+                    animation: ani_3 4.5s; opacity: 0;
+                }
+                .man_left{
+                    position: absolute;
+                    top: 207px;
+                    width: 484px;
+                    height: 746px;
+                    left: 16%;
+                    background: url(../img/man_2_pc.png) center no-repeat;
+                    @include css3(animation,ani_1 4.5s);
+                }
+                .man_left_blur{
+                    position: absolute;
+                    top: 207px;
+                    width: 484px;
+                    height: 746px;
+                    left: 16%;
+                    background: url(../img/man_2_pc_blur.png) center no-repeat;
+                    animation: ani_1_blur 4.5s infinite;
+                }
+                .man_right{
+                    position: absolute;
+                    top: 159px;
+                    width: 534px;
+                    height: 844px;
+                    right: 25%;
+                    background: url(../img/man_1_pc.png) center no-repeat;
+                    @include css3(animation,ani_2 4.5s);
+                    .soccor{
+                        position: absolute;
+                        top: 590px;
+                        left: 165px;
+                        width: 109px;
+                        height: 108px;
+                        background: url(../img/soccor.png) center no-repeat;
+                        //@include css3(animation,ani_soccor 0.8s linear infinite);
+                    }
+                }
+                .man_right_blur{
+                    position: absolute;
+                    top: 159px;
+                    width: 534px;
+                    height: 844px;
+                    right: 27%;
+                    background: url(../img/man_1_pc_blur.png) center no-repeat;
+                    animation: ani_2_blur 4.5s infinite;
+                }
+                .worldcup{
+                    position: absolute;
+                    bottom: 20px;
+                    width: 203px;
+                    height: 429px;
+                    right: 20%;
+                    background: url(../img/award_pc.png) center no-repeat;
+                }
+                .textzone_01{
+                    position: absolute;
+                    top: 989px;
+                    left: 13%;
+                    .title_static{
+                        font-size: 27px;
+                        color: #ffd800;
+                        margin-bottom: 20px;
+                    }
+                    .textcontent_01{
+                        font-size: 16px;
+                        color: white;
+                        width: 60%;
+                        line-height: 29px;
+                        letter-spacing: 2px;
+                    }
+                }
+
+            }
+        }
+        .zone02{
+            width: 100%;
+            min-width: 1350px;
+            height: 576px;
+            background: url(../img/zonebg_02_pc.jpg) center no-repeat;
+            .zone02_center{
+                position: relative;
+                width: 75%;
+                min-width: 1350px;
+                height: 576px;
+                //background-color: aqua;
+                margin: 0 auto;
+                ul.groupzone{
+                    width: 70%;
+                    margin: 0 auto;
+                    top: 73px;
+                    position: relative;
+                    overflow: hidden;
+                    //background-color: tomato;
+                    li{
+                        float: left;
+                        margin: 0px 11px 18px;
+                        width: calc(25% - 22px);
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    
+                    /*.w258h246{
+                        width: 258px;
+                        height: 246px;
+                        float: left;
+                        margin: 0 3px 16px;
+                    }
+                    .group_A{
+                        background: url(../img/group_a.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_B{
+                        background: url(../img/group_b.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_C{
+                        background: url(../img/group_c.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_D{
+                        background: url(../img/group_d.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_E{
+                        background: url(../img/group_e.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_F{
+                        background: url(../img/group_f.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_G{
+                        background: url(../img/group_g.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_H{
+                        background: url(../img/group_h.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }*/
+                }
+            }
+        }
+        .zone03{
+            width: 100%;
+            min-width: 1350px;
+            height: 540px;
+            background: url(../img/zonebg_03_pc.jpg) center no-repeat;
+            .zone03_center{
+                position: relative;
+                width: 75%;
+                min-width: 1350px;
+                height: 540px;
+                //background-color: rgb(0, 17, 255);
+                margin: 0 auto;
+                .zone03_leftzone{
+                    position: absolute;
+                    left: 4%;
+                    top: 17px;
+                    width: 722px;
+                    height: 523px;
+                    background: url(../img/sport_pc.png) center no-repeat;
+                }
+                .zone03_rightzone{
+                    position: absolute;
+                    top: 102px;
+                    right: 13%;
+                    width: 30%;
+                    .divider_03{
+                        width: 8%;
+                        height: 1px;
+                        background-color: #656565;
+                        margin: 29px auto 19px;
+                    }
+                    .zone03_textz{
+                        .title_static{
+                            font-size: 27px;
+                            color: #ffd800;
+                            margin-bottom: 20px;
+                        }
+                        .textcontent_03{
+                            font-size: 16px;
+                            color: white;
+                            line-height: 29px;
+                            letter-spacing: 2px;
+                        }
+                    }
+                    .btn_only{
+                        font-size: 20px;
+                        position: absolute;
+                        background-color: #333a4b;
+                        text-decoration: none;
+                        padding: 18px 92px 18px 72px;
+                        letter-spacing: 7px;
+                        color: white;
+                        left: 66px;
+                        transition-duration: 0.6s;
+                        border: 2px solid #7b7b7b;
+                        margin: 46px 0 0;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            top: 18px;
+                            left: 187px;
+                            width: 18px;
+                            height: 20px;
+                            background: url(../img/load_i.png) center no-repeat;
+                            background-size: 90%;
+                        }
+                        &:hover{
+                            background-color: #6b7a9f;
+                        }
+                    }
+                }
+            }
+        }
+        .btn_aria_h5{
+            display: none;
+        }
+    }
+
+}
+
+//------------------------------PAD--------------------
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .mb_show{
+        display: none;
+    }
+    .wrapper{
+        overflow-x: hidden;
+        width: 100%;
+        //height: 100vh;
+        font-family: Microsoft JhengHei;
+        background-color: black;
+        .zone01{
+            width: 100%;
+            min-width: 767px;
+            height: 1259px;
+            background: url(../img/zonebg_01_pad.jpg) center no-repeat;
+            .logo_h5{
+                display: none; 
+            }
+            .zone01_center{
+                position: relative;
+                width: 75%;
+                min-width: 767px;
+                height: 1259px;
+                //background-color: aqua;
+                margin: 0 auto;
+                img{
+                    display: none;
+                }
+                .mainlogo_pad{
+                    width: 96%;
+                    height: 300px;
+                    background: url(../img/main_slogan_pc.png) center no-repeat;
+                    background-size: 100%;
+                    position: relative;
+                    top: -364px;
+                    margin: 0 auto;
+                }
+                .mainlogo_bg_bg{
+                    position: relative;
+                    margin: 0 auto;
+                    top: -10px;
+                    height: 360px;
+                    background: url(../img/main_slogan_pc.png) center no-repeat;
+                    animation: ani_3_bg 4.5s; opacity: 1;
+                    overflow: hidden;
+                    display: none;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: -300px;
+                        top: 2px;
+                        width: 655px;
+                        height: 321px;
+                        background: url(../img/light.png) center no-repeat;
+                        animation: ani_3_light 4.5s infinite;
+                    }
+                }
+                .mainlogo_bg{
+                    position: relative;
+                    margin: 0 auto;
+                    top: -361px;
+                    height: 360px;
+                    //display: inline;
+                    background: url(../img/toplogo_empty.png) center no-repeat;
+                    animation: ani_3_bg 4.5s; opacity: 1;
+                    /*&::before{
+                        content: "";
+                        position: absolute;
+                        top: 13px;
+                        left: 161px;
+                        background: url(../img/main_slogan_pc.png) center no-repeat;
+                        width: 1029px;
+                        height: 319px;
+                    }*/
+                }
+                /*.mainlogo{
+                    position: relative;
+                    margin: 0 auto;
+                    top: -708px;
+                    width: 1029px;
+                    height: 319px;
+                    background: url(../img/main_slogan_pc.png) center no-repeat;
+                    animation: ani_3 4.5s; opacity: 0;
+                }*/
+                .man_left{
+                    position: absolute;
+                    top: 207px;
+                    width: 484px;
+                    height: 746px;
+                    left: -44px;
+                    background: url(../img/man_2_pc.png) center no-repeat;
+                    //@include css3(animation,ani_1 4.5s);
+                }
+                .man_left_blur{
+                    position: absolute;
+                    top: 207px;
+                    width: 484px;
+                    height: 746px;
+                    left: 16%;
+                    background: url(../img/man_2_pc_blur.png) center no-repeat;
+                    animation: ani_1_blur_pad 4.5s infinite;
+                }
+                .man_right{
+                    position: absolute;
+                    top: 159px;
+                    width: 636px;
+                    height: 844px;
+                    right: -1%;
+                    background: url(../img/man_1_pad.png) center no-repeat;
+                    //@include css3(animation,ani_2 4.5s);
+                    /*.soccor{
+                        position: absolute;
+                        top: 590px;
+                        left: 165px;
+                        width: 109px;
+                        height: 108px;
+                        background: url(../img/soccor.png) center no-repeat;
+                        //@include css3(animation,ani_soccor 0.8s linear infinite);
+                    }*/
+                }
+                .man_right_blur{
+                    position: absolute;
+                    top: 159px;
+                    width: 534px;
+                    height: 844px;
+                    right: 27%;
+                    background: url(../img/man_1_pc_blur.png) center no-repeat;
+                    animation: ani_2_blur_pad 4.5s infinite;
+                }
+                .worldcup{
+                    position: absolute;
+                    bottom: 20px;
+                    width: 203px;
+                    height: 429px;
+                    right: 2%;
+                    background: url(../img/award_pc.png) center no-repeat;
+                }
+                .textzone_01{
+                    position: absolute;
+                    top: 989px;
+                    left: 8%;
+                    .title_static{
+                        font-size: 27px;
+                        color: #ffd800;
+                        margin-bottom: 20px;
+                    }
+                    .textcontent_01{
+                        font-size: 16px;
+                        color: white;
+                        width: 60%;
+                        line-height: 29px;
+                        letter-spacing: 2px;
+                    }
+                }
+
+            }
+        }
+        .zone02{
+            width: 100%;
+            min-width: 767px;
+            height: 433px;
+            background: url(../img/zonebg_02_pad.jpg) center no-repeat;
+            .zone02_center{
+                position: relative;
+                width: 75%;
+                min-width: 767px;
+                height: 433px;
+                //background-color: aqua;
+                margin: 0 auto;
+                ul.groupzone{
+                    width: 92%;
+                    margin: 0 auto;
+                    top: 38px;
+                    position: relative;
+                    overflow: hidden;
+                    //background-color: tomato;
+                    li{
+                        float: left;
+                        margin: 0px 3px 18px;
+                        width: calc(25% - 6px);
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .zone03{
+            width: 100%;
+            min-width: 767px;
+            height: 540px;
+            background: url(../img/zonebg_03_pad.jpg) center no-repeat;
+            .zone03_center{
+                position: relative;
+                width: 75%;
+                min-width: 767px;
+                height: 540px;
+                //background-color: rgb(0, 17, 255);
+                margin: 0 auto;
+                .zone03_leftzone{
+                    position: absolute;
+                    left: 4%;
+                    top: 17px;
+                    width: 722px;
+                    height: 523px;
+                    background: url(../img/sport_pc.png) center no-repeat;
+                    display: none;
+                }
+                .zone03_rightzone{
+                    position: relative;
+                    top: 94px;
+                    width: 83%;
+                    margin: 0 auto;
+                    .divider_03{
+                        width: 8%;
+                        height: 1px;
+                        background-color: #656565;
+                        margin: 14px auto 28px;
+                    }
+                    .zone03_textz{
+                        .title_static{
+                            font-size: 27px;
+                            color: #ffd800;
+                            margin-bottom: 20px;
+                            text-align: center;
+                        }
+                        .textcontent_03{
+                            font-size: 16px;
+                            color: white;
+                            line-height: 29px;
+                            letter-spacing: 2px;
+                        }
+                    }
+                    .btn_only{
+                        font-size: 20px;
+                        position: relative;
+                        background-color: #333a4b;
+                        text-decoration: none;
+                        padding: 18px 92px 18px 72px;
+                        letter-spacing: 7px;
+                        color: white;
+                        top: 66px;
+                        left: 184px;
+                        transition-duration: 0.6s;
+                        border: 2px solid #7b7b7b;
+                        margin: 0 auto;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            top: 18px;
+                            left: 187px;
+                            width: 18px;
+                            height: 20px;
+                            background: url(../img/load_i.png) center no-repeat;
+                            background-size: 90%;
+                        }
+                        &:hover{
+                            background-color: #6b7a9f;
+                        }
+                    }
+                }
+            }
+        }
+        .btn_aria_h5{
+            display: none;
+        }
+    }
+
+}
+
+//------------------------------mobile--------------------
+@media only screen and (max-width: 767px){
+    .wrapper{
+        width: 100%;
+        font-family: Microsoft JhengHei;
+        overflow: hidden;
+        background-color: #161616;
+        .zone01{
+            width: 100%;
+            .logo_h5{
+                width: 100%;
+                height: 68px;
+                background: url(../img/logo_h5.png) center no-repeat;
+                background-size: 160px 45px;
+            }
+            .zone01_center{
+                background: url(../img/zonebg_01_h5.jpg) top center no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+    .textzone_01{
+        .title_static{
+            font-size: 27px;
+            color: #ffd800;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .textcontent_01{
+            font-size: 16px;
+            color: white;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 29px;
+            letter-spacing: 2px;
+        }
+    }
+    .zone02{
+        width: 100%;
+        overflow: hidden;
+        .zone02_center{
+            width: 90%;
+            margin: 40px auto 0;
+            .groupzone{
+                width: 100%;
+                li{
+                    width: calc(50% - 6px);
+                    float: left;
+                    margin: 5px 3px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .zone03{
+        margin-top: 20px;
+        .zone03_center{
+            .zone03_leftzone{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .zone03_textz{
+        .title_static{
+            font-size: 27px;
+            color: #ffd800;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .textcontent_03{
+            font-size: 16px;
+            color: white;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 29px;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+    }
+    .divider_03{
+        img{
+            width: 100%;
+        }
+    }
+    .btn_only{
+        display: none;
+    }
+    .btn_aria_h5{
+        background-color: #333a4b;
+        padding: 22px 10%;
+        margin: 25px 5% 33px;
+        animation: ani_8_h5 1.5s;
+        border: 2px solid #7b7b7b;
+        //cursor: pointer;
+        .btn_c_h5{
+            position: relative;
+            margin: 0 auto;
+            width: 166px;
+            height: 26px;
+            .btn_load_h5{
+                position: absolute;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                letter-spacing: 11px;
+            }
+            .loadicon_h5{
+                position: absolute;
+                width: 17px;
+                height: 30px;
+                background: url(../img/load_i.png) center no-repeat;
+                background-size: 104%;
+                left: 146px;
+                top: -2px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+//----------------------anima---------------------
+@include keyframes(ani_1) {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    20% {
+        opacity: 1;
+        left: 16%;
+    }
+}
+@include keyframes(ani_soccor) {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@include keyframes(ani_2) {
+    0% {
+        opacity: 0;
+        right: 27%;
+    }
+    6% {
+        opacity: 0;
+        right: 27%;
+    }
+    25% {
+        opacity: 1;
+        right: 25%;
+    }
+}
+@include keyframes(ani_3) {
+    0% {
+        opacity: 0;
+        top: -688px;
+    }
+    10% {
+        opacity: 0;
+        top: -688px;
+    }
+    30% {
+        opacity: 1;
+        top: -708px;
+    }
+    35% {
+        opacity: 1;
+        top: -708px;
+    }
+    40% {
+        opacity: 0;
+        top: -708px;
+    }
+    100% {
+        opacity: 0;
+        top: -708px;
+    }
+}
+@include keyframes(ani_3_bg) {
+    0% {
+        opacity: 0;
+    }
+    31% {
+        opacity: 0;
+    }
+    32% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@include keyframes(ani_3_bg_pad) {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+@include keyframes(ani_3_light) {
+    0% {
+        opacity: 0;
+        left: -300px;
+    }
+    39% {
+        opacity: 0;
+        left: -300px;
+    }
+    40% {
+        opacity: 1;
+        left: -300px;
+    }
+    80% {
+        opacity: 1;
+        left: 1000px;
+    }
+    100% {
+        opacity: 0;
+        left: 1000px;
+    }
+}
+@keyframes ani_1_blur {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    25% {
+        opacity: 0;
+        left: 20%;
+    }
+    28% {
+        opacity: 0.6;
+        left: 15%;
+    }
+    31% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 0;
+        left: 20%;
+    }
+}
+@keyframes ani_2_blur {
+    0% {
+        opacity: 0;
+        right: 26%;
+    }
+    30% {
+        opacity: 0;
+        right: 26%;
+    }
+    33% {
+        opacity: 0.6;
+        right: 24%;
+    }
+    36% {
+        opacity: 0;
+        right: 26%;
+    }
+    100% {
+        opacity: 0;
+        right: 26%;
+    }
+}
+@keyframes ani_1_blur_pad {
+    0% {
+        opacity: 0;
+        left: -5%;
+    }
+    25% {
+        opacity: 0;
+        left: -5%;
+    }
+    28% {
+        opacity: 0.6;
+        left: -9%;
+    }
+    31% {
+        opacity: 0;
+        left: -5%;
+    }
+    100% {
+        opacity: 0;
+        left: -5%;
+    }
+}
+@keyframes ani_2_blur_pad {
+    0% {
+        opacity: 0;
+        right: -1%;
+    }
+    30% {
+        opacity: 0;
+        right: -1%;
+    }
+    33% {
+        opacity: 0.6;
+        right: 5%;
+    }
+    36% {
+        opacity: 0;
+        right: -1%;
+    }
+    100% {
+        opacity: 0;
+        right: -1%;
+    }
+}

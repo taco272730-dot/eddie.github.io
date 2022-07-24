@@ -1,0 +1,525 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	color:#7D7D7D;
+	font: normal 21px/24px "微軟正黑體", Verdana, Geneva, sans-serif;
+	background-color:#fff;
+}
+@media only screen and (min-width: 1611px) {
+	.wrapper{
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+		/*background-color: black;*/
+	}
+	/*第一區*/
+	.zone01{
+		width: 100%;
+		height: 630px;
+		background: url("../images/z01_bg.jpg") center no-repeat;
+
+	}
+	.zone01_center{
+		position: relative;
+		width: 80%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		height: 630px;
+		margin: 0 auto;
+		background: url("../images/z01_bg.jpg") center no-repeat;
+		/*background-color: aqua;*/
+	}
+	.zone01_center img{
+		display: none;
+	}
+	/*第二區*/
+	.zone02{
+		width: 100%;
+		height: 360px;
+		background: url("../images/z02_bg.jpg") center no-repeat;
+
+	}
+	.zone02_center{
+		position: relative;
+		width: 80%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		height: 360px;
+		margin: 0 auto;
+		background: url("../images/z02_bg.jpg") center no-repeat;
+		font-size: 18px;
+		line-height: 35px;
+		/*background-color: aqua;*/
+	}
+	.z02_l{
+		position: absolute;
+		width: 50%;
+		height: 445px;
+		left: 10%;
+		top: 58px;
+		/*background-color: brown;*/
+	}
+	.z02greentext_1{
+		color: #41ac36; 
+		font-weight: bold;
+	}
+	.z02greentext_2{
+		color: #6e53e3; 
+		font-weight: bold;
+	}
+	.z02_title{
+		font-size: 30px; 
+		color: black; 
+		font-weight: bold;  
+		padding-bottom: 11px;
+	}
+	.z02_r{
+		position: absolute;
+		width: 417px;
+		height: 445px;
+		right: 10%;
+		bottom: 0;
+		background: url("../images/z02_phone.png") center no-repeat;
+	}
+	.lineidlink{
+		display: none;
+	}
+	/*第三區*/
+	.zone03{
+		width: 100%;
+		height: 360px;
+		background: url("../images/z03_bg.jpg") center no-repeat;
+
+	}
+	.zone03_center{
+		position: relative;
+		width: 80%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		height: 360px;
+		margin: 0 auto;
+		background: url("../images/z03_bg.jpg") center no-repeat;
+		/*background-color: aqua;*/
+	}
+	.w380h414{
+		position: absolute;
+		width: 380px;
+		height: 414px;
+		bottom: 0;
+	}
+	.z03_step01{
+		left: 10%;
+		background: url("../images/z03_step1.png") center no-repeat;
+	}
+	.z03_step01 img{
+		display: none;
+	}
+	.z03_step02{
+		left: 38%;
+		background: url("../images/z03_step2.png") center no-repeat;
+	}
+	.z03_step02 img{
+		display: none;
+	}
+	.z03_step03{
+		left: 66%;
+		background: url("../images/z03_step3.png") center no-repeat;
+	}
+	.z03_step03 img{
+		display: none;
+	}
+	.z03_phone_ex{
+		display: none;
+	}
+	.z03_title{
+		display: none;
+	}
+	/*第四區*/
+	.zone04{
+		width: 100%;
+		height: 360px;
+		background: url("../images/z04_bg.jpg") center no-repeat;
+
+	}
+	.zone04_center{
+		position: relative;
+		width: 80%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		height: 360px;
+		margin: 0 auto;
+		background: url("../images/z04_bg.jpg") center no-repeat;
+		font-size: 18px;
+		line-height: 35px;
+		overflow:hidden;
+		/*background-color: aqua;*/
+	}
+	.z04_l{
+		position: absolute;
+		width: 370px;
+		height: 258px;
+		left: 10%;
+		top: 78px;
+		background: url("../images/z04_phone.png") center no-repeat;
+	}
+	.z04_r{
+		position: absolute;
+		width: 52%;
+		right: 10%;
+		top: 37px;
+		/* background-color: brown; */
+		color: white;
+	}
+	.z04_title{
+		font-size: 30px; 
+		color: #ffe400; 
+		font-weight: bold;  
+		padding-bottom: 11px;
+	}
+	.z04_text_content{
+		float: left;
+		display: inline-flex;
+		min-width: 395px;
+	}
+
+}
+/*------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1610px) {
+	/*body{
+		color:#7D7D7D;
+		font: normal 21px/24px "微軟正黑體", Verdana, Geneva, sans-serif;
+		background-color:#fff;
+	}*/
+	.wrapper{
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+	}
+	/*第一區*/
+	.zone01{
+		width: 100%;
+		height: 500px;
+		background: url("../images/z01_bg.jpg") center no-repeat;
+
+	}
+	.zone01_center{
+		position: relative;
+		width: 100%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		height: 500px;
+		margin: 0 auto;
+		background: url(../images/z01_bg.jpg) 64% 32% no-repeat;
+		/*background-color: aqua;*/
+	}
+	.zone01_center img{
+		display: none;
+	}
+	/*第二區*/
+	.zone02{
+		width: 100%;
+		height: 360px;
+		background: url("../images/z02_bg.jpg") center no-repeat;
+
+	}
+	.zone02_center{
+		position: relative;
+		width: 98%;
+		max-width: 991PX;
+		min-width: 810PX;
+		height: 360px;
+		margin: 0 auto;
+		background: url("../images/z02_bg.jpg") center no-repeat;
+		font-size: 18px;
+		line-height: 35px;
+		/*background-color: aqua;*/
+	}
+	.z02_l{
+		position: absolute;
+		width: 51%;
+		height: 445px;
+		left: 7%;
+		top: 28px;
+		/*background-color: brown;*/
+	}
+	.z02greentext_1{
+		color: #41ac36; 
+		font-weight: bold;
+	}
+	.z02greentext_2{
+		color: #6e53e3; 
+		font-weight: bold;
+	}
+	.z02_title{
+		font-size: 30px; 
+		color: black; 
+		font-weight: bold;  
+		padding-bottom: 11px;
+	}
+	.z02_r{
+		position: absolute;
+		width: 417px;
+		height: 445px;
+		right: -7%;
+		bottom: 0;
+		background: url("../images/z02_phone.png") center no-repeat;
+	}
+	.lineidlink{
+		position: absolute;
+		width: 165px;
+		/*background-color: blue;*/
+		top: 118px;
+		left: 108px;
+		height: 165px;
+	}
+	.lineidlink img{
+		display: none;
+	}
+	.h5_imp_text{
+		color: #ff7e00;
+		font-weight: bold;
+	}
+	/*第三區*/
+	.zone03{
+		width: 100%;
+		height: 235px;
+		background: url("../images/z03_bg.jpg") center no-repeat;
+
+	}
+	.zone03_center{
+		position: relative;
+		width: 98%;
+		max-width: 991PX;
+		min-width: 810PX;
+		height: 235px;
+		margin: 0 auto;
+		background: url(../images/z03_bg.jpg) center no-repeat;
+		/*background-color: aqua;*/
+	}
+	.w380h414{
+		position: absolute;
+		width: 252px;
+		height: 300px;
+		bottom: 0;
+	}
+	.z03_step01{
+		left: 2%;
+		background: url(../images/z03_step1.png) bottom no-repeat;
+		background-size: 102%;
+	}
+	.z03_step01 img{
+		display: none;
+	}
+	.z03_step02{
+		left: 33%;
+		background: url(../images/z03_step2.png) bottom no-repeat;
+		background-size: 102%;
+	}
+	.z03_step02 img{
+		display: none;
+	}
+	.z03_step03{
+		left: 65%;
+		background: url(../images/z03_step3.png) bottom no-repeat;
+		background-size: 102%;
+	}
+	.z03_step03 img{
+		display: none;
+	}
+	.z03_phone_ex{
+		display: none;
+	}
+	.z03_title{
+		display: none;
+	}
+	/*第四區*/
+	.zone04{
+		width: 100%;
+		height: 360px;
+		background: url("../images/z04_bg.jpg") center no-repeat;
+
+	}
+	.zone04_center{
+		position: relative;
+		width: 98%;
+		max-width: 991PX;
+		min-width: 810PX;
+		height: 360px;
+		margin: 0 auto;
+		background: url("../images/z04_bg.jpg") center no-repeat;
+		font-size: 18px;
+		line-height: 35px;
+		overflow:hidden;
+		/*background-color: aqua;*/
+	}
+	.z04_l{
+		display: none;
+	}
+	.z04_r{
+		position: relative;
+		width: 721px;
+		top: 35px;
+		/* background-color: brown; */
+		color: white;
+		min-width: 377px;
+		/* padding: 0 29px; */
+		margin: 0 auto;
+	}
+	.z04_title{
+		font-size: 30px; 
+		color: #ffe400; 
+		font-weight: bold;  
+		padding-bottom: 11px;
+		text-align: center;
+	}
+	.z04_text_content{
+		float: left;
+		display: inline-flex;
+		min-width: 395px;
+	}
+}
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+	/*body{
+		color:#7D7D7D;
+		font: normal 21px/24px "微軟正黑體", Verdana, Geneva, sans-serif;
+		background-color:#fff;
+	}*/
+	.wrapper{
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+	}
+	/*第一區*/
+	.zone01{
+		width: 100%;
+
+	}
+	.zone01_center{
+		width: 100%;
+		background-size: 102%;
+	}
+	/*第二區*/
+	.zone02{
+		width: 100%;
+
+	}
+	.zone02_center{
+		width: 100%;
+		font-size: 18px;
+		line-height: 35px;
+		background: url(../images/z02_bg_h5.jpg) center no-repeat;
+	}
+	.z02_l{
+		width: 88%;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	.h5_imp_text{
+		color: #ff7e00;
+		font-weight: bold;
+	}
+	.z02_title{
+		font-size: 30px; 
+		color: black; 
+		font-weight: bold;  
+		padding-bottom: 11px;
+		text-align: center;
+	}
+	.z02greentext_1{
+		color: #41ac36; 
+		font-weight: bold;
+		text-align: center;
+	}
+	.z02greentext_2{
+		color: #6e53e3; 
+		font-weight: bold;
+		text-align: center;
+	}
+	.z02_r{
+		width: 100%;
+		background: url(../images/z02_phone_h5.png) center no-repeat;
+		background-size: 103%;
+	}
+	.lineidlink{
+	}
+	/*第三區*/
+	.zone03{
+		width: 100%;
+		/*height: 360px;
+		background: url("../images/z03_bg.jpg") center no-repeat;*/
+
+	}
+	.zone03_center{
+		width: 100%;
+	}
+	.z03_title{
+		font-size: 30px;
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		padding: 28px 5%;
+		background-color: #20186b;
+	}
+	.w380h414{
+	}
+	.z03_step01{
+		width: 100%;
+	}
+	.z03_step02{
+		width: 100%;
+	}
+	.z03_step03{
+		width: 100%;
+	}
+	.z03_phone_ex{
+		padding: 15px 5%;
+		color: black;
+		background-color: #ffd118;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 26px;
+	}
+	/*第四區*/
+	.zone04{
+		width: 100%;
+		background-color: #333;
+		padding: 0 0 41px 0;
+	}
+	.zone04_center{
+		width: 100%;
+		font-size: 18px;
+		line-height: 35px;
+		overflow: hidden;
+		background: url(../images/z04_bg_h5.jpg) center no-repeat;
+	}
+	.z04_l{
+		display: none;
+		position: absolute;
+		width: 370px;
+		height: 258px;
+		left: 10%;
+		top: 78px;
+		background: url("../images/z04_phone.png") center no-repeat;
+	}
+	.z04_r{
+		color: white;
+		padding: 20px;
+	}
+	.z04_title{
+		font-size: 30px; 
+		color: #ffe400; 
+		font-weight: bold;  
+		padding-bottom: 11px;
+		text-align: center;
+	}
+	.z04_text_content{
+		float: left;
+		display: inline-flex;
+	}
+
+}
+
+
+

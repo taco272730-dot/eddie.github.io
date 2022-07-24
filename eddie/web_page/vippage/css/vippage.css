@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	color:#ababab;
+	font: normal 21px/24px "微軟正黑體", Verdana, Geneva, sans-serif;
+	background-color:#000;
+}
+@media only screen and (min-width: 1611px) {
+	.wrapper{
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+		/*background-color: black;*/
+	}
+	/*第一區*/
+	.zone01_center img{
+		display: none;
+	}
+	.zone01{
+		width: 100%;
+		height: 630px;
+		background: url("../images/vipmission_01.jpg") center no-repeat;
+
+	}
+	.zone01_center{
+		position: relative;
+		width: 80%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		height: 630px;
+		margin: 0 auto;
+		background: url("../images/vipmission_01.jpg") center no-repeat;
+		/*background-color: aqua;*/
+	}
+	.logo_z1{
+		position: relative;
+		width: 805px;
+		height: 546px;
+		margin: 0 auto;
+		top: 92px;
+		background: url("../images/viplogo_z1.png") center no-repeat;
+	}
+	.dl_z1{
+		position: absolute;
+		width: 248px;
+		height: 247px;
+		top: 144px;
+		left: 23%;
+		background: url("../images/dl_z1.png") center no-repeat;
+	}
+	.dr_z1{
+		position: absolute;
+		width: 231px;
+		height: 240px;
+		top: 343px;
+		right: 25%;
+		background: url("../images/dr_z1.png") center no-repeat;
+	}
+	/*第二區*/
+	.zone02_center img{
+		display: none;
+	}
+	.zone02{
+		width: 100%;
+		height: 684px;
+		background: url("../images/vipmission_02.jpg") center no-repeat;
+
+	}
+	.zone02_center{
+		position: relative;
+		width: 80%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		height: 684px;
+		margin: 0 auto;
+		background: url("../images/vipmission_02.jpg") center no-repeat;
+		font-size: 18px;
+		line-height: 35px;
+		/*background-color: aqua;*/
+	}
+	.z02_title{
+		font-size: 30px;
+		color: #caa46c;
+		font-weight: bold;
+		text-align: center;
+		padding: 42px 0 20px;
+	}
+	.textcontent_1_z2{
+		width: 70%;
+		margin: 0 auto;
+		padding: 0 0 20px;
+	}
+	.flame_z2{
+		position: relative;
+		height: 391px;
+		margin: 0 0 25px;
+		background: url("../images/flame.png") center no-repeat;
+	}
+	.textcontent_2_z2{
+		text-align: center;
+		font-weight: bold;
+		color: #f2d76e;
+	}
+
+
+	/*第三區*/
+	.zone03{
+		width: 100%;
+		background: url("../images/vipmission_03.jpg") top no-repeat;
+	}
+	.zone03_center{
+		position: relative;
+		width: 80%;
+		max-width: 1600PX;
+		min-width: 1000PX;
+		/* height: 491px; */
+		margin: 0 auto;
+		/* background: url(../images/vipmission_03.jpg) center no-repeat; */
+		font-size: 18px;
+		line-height: 35px;
+		overflow: hidden;
+		/* background-color: aqua; */
+		padding: 0 0 39px;
+	}
+	.z03_r{
+		width: 70%;
+		top: 37px;
+		margin: 42px auto 0;
+	}
+	.z03_title{
+		font-size: 30px;
+		color: #caa46c;
+		font-weight: bold;
+		text-align: center;
+		padding: 0 0 20px;
+	}
+	.z03_text_content{
+		float: left;
+		display: inline-flex;
+		min-width: 800px;
+	}
+
+}
+/*------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1610px) {
+	.wrapper{
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+		/*background-color: black;*/
+	}
+	/*第一區*/
+	.zone01_center img{
+		display: none;
+	}
+	.zone01{
+		width: 100%;
+		height: 450px;
+		/*background: url("../images/vipmission_01.jpg") center no-repeat;*/
+
+	}
+	.zone01_center{
+		position: relative;
+		width: 100%;
+		max-width: 1600PX;
+		min-width: 735PX;
+		height: 450px;
+		margin: 0 auto;
+		background: url("../images/vipmission_01.jpg") center no-repeat;
+		background-size: 293%;
+		/*background-color: aqua;*/
+	}
+	.logo_z1{
+		position: relative;
+		height: 442px;
+		margin: 0 auto;
+		top: 58px;
+		background: url(../images/viplogo_z1.png) center no-repeat;
+		background-size: 537px;
+	}
+	.dl_z1{
+		position: absolute;
+		width: 248px;
+		height: 247px;
+		top: 41px;
+		left: 15%;
+		background: url("../images/dl_z1.png") center no-repeat;
+	}
+	.dr_z1{
+		position: absolute;
+		width: 231px;
+		height: 240px;
+		top: 187px;
+		right: 19%;
+		background: url("../images/dr_z1.png") center no-repeat;
+	}
+	/*第二區*/
+	.zone02_center img{
+		display: none;
+	}
+	.zone02{
+		width: 100%;
+		background: url("../images/vipmission_02.jpg") center no-repeat;
+
+	}
+	.zone02_center{
+		position: relative;
+		width: 100%;
+		max-width: 1600PX;
+		min-width: 735PX;
+		margin: 0 auto;
+		background: url("../images/vipmission_02.jpg") center no-repeat;
+		font-size: 18px;
+		line-height: 35px;
+		/*background-color: aqua;*/
+	}
+	.z02_title{
+		font-size: 30px;
+		color: #caa46c;
+		font-weight: bold;
+		text-align: center;
+		padding: 42px 0 20px;
+	}
+	.textcontent_1_z2{
+		width: 90%;
+		margin: 0 auto;
+		padding: 0 0 20px;
+		max-width: 950px;
+	}
+	.flame_z2{
+		position: relative;
+		height: 331px;
+		background: url(../images/flame.png) center no-repeat;
+		width: 90%;
+		background-size: 100%;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.textcontent_2_z2{
+		text-align: center;
+		font-weight: bold;
+		color: #f2d76e;
+		padding: 0 0 32px;
+	}
+
+
+	/*第三區*/
+	.zone03{
+		width: 100%;
+		background: url("../images/vipmission_03.jpg") center no-repeat;
+
+	}
+	.zone03_center{
+		position: relative;
+		width: 100%;
+		max-width: 1600PX;
+		min-width: 735PX;
+		/* height: 491px; */
+		margin: 0 auto;
+		background: url(../images/vipmission_03.jpg) top no-repeat;
+		font-size: 18px;
+		line-height: 35px;
+		overflow: hidden;
+		/* background-color: aqua; */
+		padding: 0 0 50px;
+	}
+	.z03_r{
+		width: 90%;
+		top: 37px;
+		margin: 42px auto 0;
+		max-width: 950px;
+	}
+	.z03_title{
+		font-size: 30px;
+		color: #caa46c;
+		font-weight: bold;
+		text-align: center;
+		padding: 0 0 20px;
+	}
+	.z03_text_content{
+		float: left;
+		display: inline-flex;
+		min-width: 459px;
+	}
+
+}
+
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+	/*body{
+		color:#7D7D7D;
+		font: normal 21px/24px "微軟正黑體", Verdana, Geneva, sans-serif;
+		background-color:#fff;
+	}*/
+	.wrapper{
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+	}
+	/*第一區*/
+	.zone01{
+		width: 100%;
+
+	}
+	.zone01_center{
+		width: 100%;
+	}
+
+	/*第二區*/
+	.textcontent_2_z2 {
+		text-align: center;
+		font-weight: bold;
+		color: #f2d76e;
+	}
+	.zone02{
+		width: 100%;
+		background: url(../images/vipmission_02_h5.jpg) center no-repeat;
+		background-size: 124%;
+	}
+	.zone02_center{
+		width: 90%;
+		font-size: 18px;
+		line-height: 35px;
+
+		margin: 0 auto;
+		padding: 20px 0 45px;
+	}
+	.z02_l{
+		width: 88%;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	.h5_imp_text{
+		color: #ff7e00;
+		font-weight: bold;
+	}
+	.z02_title{
+		font-size: 30px;
+		color: #d4af76;
+		font-weight: bold;
+		padding-bottom: 11px;
+		text-align: center;
+		padding: 20px 0;
+	}
+	.z02greentext_1{
+		color: #41ac36; 
+		font-weight: bold;
+		text-align: center;
+	}
+	.z02greentext_2{
+		color: #6e53e3; 
+		font-weight: bold;
+		text-align: center;
+	}
+	.z02_r{
+		width: 100%;
+		background: url(../images/z02_phone_h5.png) center no-repeat;
+		background-size: 103%;
+	}
+	.textcontent_1_z2{
+		padding: 0 0 30px;
+	}
+	
+	/*第三區*/
+	.zone03{
+		width: 100%;
+		background-color: #333;
+		padding: 0 0 41px 0;
+		background: url(../images/vipmission_03_h5.jpg) center no-repeat;
+		background-size: 100%;
+	}
+	.zone03_center{
+		width: 90%;
+		font-size: 18px;
+		line-height: 35px;
+		overflow: hidden;
+		/* background: url(../images/vipmission_03.jpg) center no-repeat; */
+		margin: 0 auto;
+	}
+	.z03_r{
+		padding: 20px 0;
+	}
+	.z03_title{
+		font-size: 30px; 
+		color: #d4af76; 
+		font-weight: bold;  
+		padding: 10px 0;
+		text-align: center;
+	}
+	.z03_text_content{
+		float: left;
+		display: inline-flex;
+	}
+
+}
+
+
+
