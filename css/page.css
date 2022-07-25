@@ -770,6 +770,19 @@ footer div{
         transform: scale(1);
         filter: blur(0) opacity(1);
     }
+    /* .wrapper{
+        background: url(../images/bg_01.jpg) repeat center;
+    } */
+    .wrapper section:nth-child(even){
+        background: url(../images/bg_01.jpg) center repeat;
+    }
+    .wrapper section:nth-child(odd){
+        background: url(../images/bg_02.jpg) center repeat;
+    }
+    .tinyIcon a:hover {
+        transform: scale(1);
+        text-shadow: inherit;
+    }
 }
 
 @media only screen and (max-width: 767px) {
