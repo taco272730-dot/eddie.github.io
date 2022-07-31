@@ -5,6 +5,7 @@ body{
     position: relative;
     font-family: Arial, '微軟正黑體', Helvetica, sans-serif;
     background: url(../images/bg_02.jpg) center no-repeat fixed;
+    background-size: cover;
 }
 header{
     position: fixed;
@@ -128,6 +129,7 @@ header ul li a:hover{
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
     padding: 50px 0;
     background: url(../images/bg_01.jpg) center no-repeat fixed;
+    background-size: cover;
 }
 .wrapper section:nth-child(even)::before,.wrapper section:nth-child(even)::after{
     content: "";
@@ -573,6 +575,7 @@ header ul li a:hover{
 }
 footer{
     background:url(../images/bg_03.jpg) center no-repeat fixed;
+    background-size: cover;
     text-align: center;
     padding: 50px 0;
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
