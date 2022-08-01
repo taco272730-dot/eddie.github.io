@@ -173,7 +173,8 @@ header ul li a:hover{
 .sect_center{
     position: relative;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
+    max-width: 1200px;
 }
 .sect_title{
     font-size: 75px;
