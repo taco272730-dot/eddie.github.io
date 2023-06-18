@@ -699,6 +699,7 @@ footer div{
 .layout_aria aside{
     display: flex;
     width: 100%;
+    transition: .5s;
 }
 .layout_aria__body{
     background: linear-gradient(0deg, #ffffff00, white);
@@ -1142,5 +1143,8 @@ footer div{
     }
     .layout_aria aside{
         flex-direction: column;
+    }
+    .mobile-top{
+        order: -1;
     }
 }
