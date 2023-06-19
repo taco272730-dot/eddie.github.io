@@ -790,7 +790,9 @@ footer div{
 .toHead{
     order: -1;
 }
-
+.flex-big{
+    flex: 1.5;
+}
 @media screen and (max-width: 1300px) {
     .d-flex{
         display: flex;
@@ -968,6 +970,9 @@ footer div{
     }
     .layout_aria__title{
         width: 90%;
+    }
+    .flex-big{
+        flex: 1;
     }
 }
 
