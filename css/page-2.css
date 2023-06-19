@@ -1060,6 +1060,7 @@ footer div{
     }
     .sect_title {
         margin: 53px 10% 20px;
+        font-size: 64px;
     }
     .centerlogo {
         background: url(../images/centerlogo.png) center 10% no-repeat;
