@@ -1,14 +1,11 @@
 .wrapper[data-type="cyber"]{
     background-image: url(../images/cyper/bg_01.jpg);
-    background-size: cover;
 }
 .wrapper[data-type="cyber"] section:nth-child(odd){
     background-image: url(../images/cyper/bg_01.jpg);
-    background-size: cover;
 }
 .wrapper[data-type="cyber"] section:nth-child(even){
     background-image: url(../images/cyper/bg_02.jpg);
-    background-size: cover;
 }
 .wrapper[data-type="cyber"] .textaria h1,.wrapper[data-type="cyber"] .sect_title{
     color: white;
@@ -24,17 +21,39 @@
 .wrapper[data-type="cyber"] footer{
     background-image: url(../images/cyper/bg_02.jpg);
 }
-@media screen and (max-width: 1300px) {
-    .wrapper[data-type="cyber"]{
-        background-size: contain !important;
-    }
-    .wrapper[data-type="cyber"] section:nth-child(odd){
-        background-size: contain !important;
-    }
-    .wrapper[data-type="cyber"] section:nth-child(even) {
-        background-size: contain !important;
-    }
-    .wrapper[data-type="cyber"] footer{
-        background-size: contain !important;
-    }
+.wrapper[data-type="cyber"] .centerlogo{
+    background-image: url(../images/cyper/centerlogo.png);
+}
+.wrapper[data-type="cyber"] header ul li a:hover{
+    box-shadow: 0 -6px 0 #00fff4 inset;
+}
+.wrapper[data-type="cyber"] .sect_center h2,.wrapper[data-type="cyber"] .textaria h3{
+    color: #00fff4;
+}
+.wrapper[data-type="cyber"] .textaria h1,.wrapper[data-type="cyber"] .sect_title{
+    box-shadow: 0 2px 0 #00fff4;
+}
+.wrapper[data-type="cyber"] .web_aria h2{
+    background-color: #00fff4;
+    color: black;
+}
+.wrapper[data-type="cyber"] .top_btn{
+    background-color: #00fff4;
+    border-color: #00fff4;
+    color: black;
+}
+.wrapper[data-type="cyber"] .top_btn:hover{
+    color: #00fff4;
+    background-color: black;
+}
+.wrapper[data-type="cyber"] .btn:hover, .wrapper[data-type="cyber"] #intro_more_btn.active {
+    background-color: #00fff4;
+    border-color: #00fff4;
+    color: black;
+}
+.wrapper[data-type="cyber"] .layout_aria__bottom a:hover{
+    color: #00fff4;
+}
+.wrapper[data-type="cyber"] .layout_aria__bottom a:before{
+    background-color: #00fff4;
 }
