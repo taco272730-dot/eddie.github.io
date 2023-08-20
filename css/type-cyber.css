@@ -24,3 +24,17 @@
 .wrapper[data-type="cyber"] footer{
     background-image: url(../images/cyper/bg_02.jpg);
 }
+@media screen and (max-width: 1300px) {
+    .wrapper[data-type="cyber"]{
+        background-size: contain !important;
+    }
+    .wrapper[data-type="cyber"] section:nth-child(odd){
+        background-size: contain !important;
+    }
+    .wrapper[data-type="cyber"] section:nth-child(even) {
+        background-size: contain !important;
+    }
+    .wrapper[data-type="cyber"] footer{
+        background-size: contain !important;
+    }
+}
