@@ -1,0 +1,26 @@
+.wrapper[data-type="cyber"]{
+    background-image: url(../images/cyper/bg_01.jpg);
+    background-size: cover;
+}
+.wrapper[data-type="cyber"] section:nth-child(odd){
+    background-image: url(../images/cyper/bg_01.jpg);
+    background-size: cover;
+}
+.wrapper[data-type="cyber"] section:nth-child(even){
+    background-image: url(../images/cyper/bg_02.jpg);
+    background-size: cover;
+}
+.wrapper[data-type="cyber"] .textaria h1,.wrapper[data-type="cyber"] .sect_title{
+    color: white;
+}
+.wrapper[data-type="cyber"] .layout_aria__body{
+    background: linear-gradient(0deg, #00000000, #5c5c5ccf);
+}
+.wrapper[data-type="cyber"] .layout_aria__title{
+    background: linear-gradient(0deg, #00000091, transparent);
+    box-shadow: 2px 2px 0px #ffffff1f;
+    color: white;
+}
+.wrapper[data-type="cyber"] footer{
+    background-image: url(../images/cyper/bg_02.jpg);
+}
