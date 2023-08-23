@@ -104,7 +104,6 @@ header ul li a:hover{
     box-shadow: 0 -6px 0 rgb(255, 153, 0) inset;
 }
 .wrapper section{
-    background-color: white;
     display: flex;
     position: relative;
     /* box-shadow: 5px 0 20px rgba(0, 0, 0, .5); */
@@ -154,8 +153,6 @@ header ul li a:hover{
     background: linear-gradient(0deg, #00000030,#00000000);
 }
 .wrapper section:nth-child(odd){
-    background: url(../images/bg_02.jpg) center no-repeat fixed;
-    background-size: cover;
     transition: .5s;
 }
 .wrapper section:nth-child(even) .sect_title{
@@ -965,10 +962,6 @@ footer div{
     }
     .wrapper section:nth-child(even){
         background: url(../images/bg_01.jpg) top repeat;
-        background-size: contain !important;
-    }
-    .wrapper section:nth-child(odd){
-        background: url(../images/bg_02.jpg) top repeat;
         background-size: contain !important;
     }
     .tinyIcon a:hover {
