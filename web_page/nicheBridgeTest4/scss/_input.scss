@@ -1,0 +1,71 @@
+.wrapper{
+  &[data-light='false']{
+    .form-row {
+        .form-password,.form-text{
+          background: #575757 no-repeat;
+          background-image: linear-gradient( 109.6deg,  #4580b6, #4580b6 );
+          background-size: 0 2px, 100% 1px;
+          background-position: 50% 100%, 50% 100%;
+        }
+    }
+  }
+  .form-row {
+    position: relative;
+    text-align: left;
+    max-width: 150px;
+    &:first-child{
+        margin-right: 10px;
+    }
+    .fas {
+      font-size: 15px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    input{
+      &::input-placeholder{
+        color:#c2c2c2;
+        font-size: fontSize(1);
+      }
+      &::-webkit-input-placeholder{
+        color:#c2c2c2;
+        font-size: fontSize(1);
+      }
+      &::-moz-input-placeholder{
+        color:#c2c2c2;
+        font-size: fontSize(1);
+      }
+      &::-ms-input-placeholder{
+        color:#c2c2c2;
+        font-size: fontSize(1);
+      }
+    }
+    .form-password,
+    .form-text {
+      transition: .5s;
+      border-radius: $normalRadius;
+      border: 0;
+      height: 35px;
+      padding: 0 40px 0 20px;
+      background: #f0f0f0 no-repeat;
+      transition: 100ms all linear 0s;
+      width: 100%;
+      box-sizing: border-box;
+      color: gray;
+      font-size: fontSize(1);
+
+    // style and effect focus inputs
+      background-image: linear-gradient( 109.6deg,  #4580b6, #4580b6 );
+      background-size: 0 2px, 100% 1px;
+      background-position: 50% 100%, 50% 100%;
+    // effect transition
+      transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    // focus  active input
+      &:focus {
+        background-size: 100% 2px, 100% 1px;
+        outline: none;
+      }
+    }
+  }
+}

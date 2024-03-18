@@ -1,0 +1,36 @@
+
+$font: 'Rubik', sans-serif;
+$shadow:  0 7px 30px -10px rgba(150,170,180,0.5);
+$white: #fff;
+body{
+    padding: 0;
+    margin: 0;
+    ul,li,figure{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+    li{
+        list-style: none;
+    }
+    h1,h2,h3,h4,h5{
+        font-size: unset;
+        margin: 0;
+        padding: 0;
+    }
+    em{
+        font-style: normal;
+    }
+    img{
+        user-select: none;
+    }
+}
+
+%cardType{
+    background-color: $zoneBgColor;
+    border-radius: $normalRadius;
+    box-shadow: 3px 4px 9px #00000029;
+}

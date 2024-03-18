@@ -510,6 +510,12 @@ header ul li a:hover{
 .web_two_part_oneTwo li:last-child{
     width: 66.66%;
 }
+.web_two_part_three li{
+    flex: 1;
+}
+.web_two_part_three li:last-child{
+    flex: 2;
+}
 /* .sec_pic:hover img {
     transform: scale(1.5);
     filter: blur(3px);
@@ -1150,6 +1156,9 @@ footer div{
     }
     .web_two_part_oneTwo li{
         width: 100% !important;
+    }
+    .web_two_part_three ul{
+        flex-direction: column;
     }
     .list_style h2{
         margin-bottom: 11px;

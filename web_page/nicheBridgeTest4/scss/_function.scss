@@ -1,0 +1,6 @@
+$baseFontSize: 14px;
+
+@function fontSize($count: 1) {
+    @return round($baseFontSize * $count);
+}
+

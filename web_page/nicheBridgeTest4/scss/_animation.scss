@@ -1,0 +1,12 @@
+ @keyframes flash {
+    0% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.7);
+        box-shadow: #2867a282 0px 0px 15px 8px;
+    }
+    100% {
+        filter: brightness(1);
+    }
+  }
