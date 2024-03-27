@@ -54,3 +54,27 @@
 .wrapper[data-type="cyber"] .layout_aria__bottom a:before{
     background-color: #00fff4;
 }
+.wrapper[data-type="cyber"] .logo{
+    background-image: url(../images/nav_logo.png);
+}
+.wrapper[data-type="cyber"] header{
+    background-color: #000000ed;
+}
+.wrapper[data-type="cyber"] header ul li a{
+    color: rgb(109 109 109);
+}
+.wrapper[data-type="cyber"] header ul li a:hover{
+    color: white;
+}
+.wrapper[data-type="cyber"] .bar{
+    background: white;
+}
+.wrapper[data-type="cyber"] .nav_option_h5{
+    background-color: #000000ed;
+}
+.wrapper[data-type="cyber"] header ul li a{
+    color: white;
+}
+.wrapper[data-type="cyber"] header{
+    box-shadow: 0 5px 10px #ffffff3d;
+}

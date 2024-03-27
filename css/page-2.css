@@ -16,15 +16,16 @@ header{
     position: fixed;
     width: 90%;
     height: 80px;
-    background-color: #000000e0;
+    background-color: #ffffffed;
     z-index: 8;
     transition: .5s;
     opacity: 1;
     border-radius: 0 0 50px 50px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 5px 10px #ffffff3d;
+    box-shadow: 3px 4px 20px #3535353d;
     overflow: hidden;
+    backdrop-filter: blur(8px);
 }
 header.active{
     transform: translate(-50%,-90px);
@@ -73,15 +74,15 @@ header.active{
     left: 10%; */
     width: 200px;
     height: 80px;
-    background: url(../images/nav_logo.png) center no-repeat;
+    background: url(../images/nav_logo_normal.png) center no-repeat;
     background-size: 100%;
     margin-left: 30px;
-    filter: brightness(.5);
     transition: .5s;
     display: block;
+    opacity: 50%;
 }
 .logo:hover{
-    filter: brightness(1);
+    opacity: 100%;
 }
 header ul{
     /* position: absolute; */
@@ -93,7 +94,7 @@ header ul{
     align-items:center;
 }
 header ul li a{
-    color: gray;
+    color: rgb(173, 173, 173);
     text-decoration: none;
     padding: 28px 20px;
     margin: 0 20px;
@@ -101,7 +102,7 @@ header ul li a{
     
 }
 header ul li a:hover{
-    color: white;
+    color: rgb(0, 0, 0);
     box-shadow: 0 -6px 0 rgb(255, 153, 0) inset;
 }
 .wrapper section{
@@ -983,7 +984,7 @@ footer div{
         .bar{
             width: 36px;
             height: 6px;
-            background: #666;
+            background: #000000;
             margin: 6px 0;
             border-radius: 2px;
         }
@@ -1001,7 +1002,7 @@ footer div{
 
 
     .nav_option_h5{
-        background-color: #000000ed;
+        background-color: #ffffffed;
         left: 0;
         height: 0;
         position: absolute;
@@ -1014,11 +1015,12 @@ footer div{
         display: block;
         text-align: center;
         padding: 20px 0;
-        color: white;
+        color: rgb(0, 0, 0);
     }
     .nav_option_h5.active{
         opacity:1;
         height:100vh;
+        padding-top: 5vh;
     }
     /* .nav_option_h5 li:nth-of-type(1){
         display: none;
