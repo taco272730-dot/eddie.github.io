@@ -73,7 +73,7 @@
     background-color: #000000ed;
 }
 .wrapper[data-type="cyber"] header ul li a{
-    color: white;
+    color: #7b7b7b;
 }
 .wrapper[data-type="cyber"] header{
     box-shadow: 0 5px 10px #ffffff3d;
