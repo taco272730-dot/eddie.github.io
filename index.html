@@ -65,6 +65,17 @@
                         </li>
                         <!-- <li><a href="#section05">Painting</a></li> -->
                         <li><a href="#section06">Contact Me</a></li>
+                        
+                        <!-- switcher按鈕區塊 -->
+                        <li class="switcher PC" data-light="true">
+                            <div class="switcher__btn">
+                                <img class="sun" alt="" src="./images/sun.svg"/>
+                                <img class="moon" alt="" src="./images/moon.svg"/>
+                                <span> </span>
+                            </div>
+                        </li>
+                        <!-- switcher按鈕區塊 -->
+
                     </ul>
                 </div>
                 <!--以下為漢堡選單內容-->
@@ -88,6 +99,15 @@
                     <li><a href="#section04">Logo Design</a></li>
                     <!-- <li><a href="#section05">Painting</a></li> -->
                     <li><a href="#section06">Contact Me</a></li>
+                    <!-- switcher按鈕區塊 -->
+                    <li class="switcher" data-light="true">
+                        <div class="switcher__btn">
+                            <img class="sun" alt="" src="./images/sun.svg"/>
+                            <img class="moon" alt="" src="./images/moon.svg"/>
+                            <span> </span>
+                        </div>
+                    </li>
+                    <!-- switcher按鈕區塊 -->
                 </ul>
             </div>
 
@@ -785,6 +805,12 @@
 
     })
     
+    // switcher__btn按钮开关
+    $(".switcher__btn").on("click", function(){
+        $(".switcher").attr("data-light") == "true" ? $(".switcher").attr("data-light", "false") : $(".switcher").attr("data-light", "true");
+        $(".wrapper").attr("data-type") == "cyber" ? $(".wrapper").attr("data-type", "normal") : $(".wrapper").attr("data-type", "cyber");
+    });
+
     jQuery(document).ready(function($) {
 		$('a[data-rel^=lightcase]').lightcase({
             swipe: true,

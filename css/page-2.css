@@ -75,7 +75,7 @@ header.active{
     height: 80px;
     background: url(../images/nav_logo.png) center no-repeat;
     background-size: 100%;
-    margin-left: 53px;
+    margin-left: 30px;
     filter: brightness(.5);
     transition: .5s;
     display: block;
@@ -86,10 +86,11 @@ header.active{
 header ul{
     /* position: absolute; */
     min-width: 153px;
-    line-height: 80px;
+    /* line-height: 80px; */
     /* right: 10%; */
     display: flex;
     justify-content:flex-start;
+    align-items:center;
 }
 header ul li a{
     color: gray;
@@ -803,6 +804,90 @@ footer div{
 .flex-big{
     flex: 1.5;
 }
+/* switcher按鈕區塊 */
+.switcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: relative;
+  }
+  .switcher.PC{
+    margin-right: 30px;
+  }
+  .switcher[data-light=false] .switcher__btn {
+    background: #b5b5b5;
+  }
+  .switcher[data-light=false] .switcher__btn span {
+    left: 3px;
+  }
+  .switcher[data-light=true] .switcher__btn {
+    background: #5f5f5f;
+  }
+  .switcher[data-light=true] .switcher__btn span {
+    left: 33px;
+    background-color: #2b2b2b;
+  }
+  .switcher::before, .switcher::after {
+    line-height: 30px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    overflow: hidden;
+    position: absolute;
+    top: 1px;
+    right: 75px;
+  }
+  .switcher__btn {
+    width: 60px;
+    height: 30px;
+    position: relative;
+    border-radius: 50px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .switcher__btn .sun, .switcher__btn .moon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .switcher__btn .sun {
+    right: 10px;
+    width: 16px;
+  }
+  .switcher__btn .moon {
+    left: 10px;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+    width: 14px;
+  }
+  .switcher__btn span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .switcher__btn span img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /* switcher按鈕區塊 */
 @media screen and (max-width: 1300px) {
     .d-flex{
         display: flex;
@@ -1016,6 +1101,7 @@ footer div{
     }
     .nav_option_h5 li{
         flex-basis: 1;
+        margin: 20px 0;
     }
     .nav_option_h5 a{
         padding: 0;
