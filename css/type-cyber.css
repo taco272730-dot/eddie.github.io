@@ -15,9 +15,9 @@
     box-shadow: 2px 2px 0px #ffffff1f;
     color: white;
 }
-.wrapper[data-type="cyber"] footer{
+/* .wrapper[data-type="cyber"] footer{
     background-image: url(../images/cyper/bg_02.jpg);
-}
+} */
 .wrapper[data-type="cyber"] .centerlogo{
     background-image: url(../images/cyper/centerlogo.png);
 }
@@ -80,6 +80,12 @@
 }
 .wrapper[data-type="cyber"] .intrologo img{
     filter: unset;
+}
+.wrapper[data-type="cyber"] .tinyIcon a{
+    color: white;
+}
+.wrapper[data-type="cyber"] footer div{
+    color: white;
 }
 @media screen and (max-width: 1300px) {
     .wrapper[data-type="cyber"] .btn:hover{

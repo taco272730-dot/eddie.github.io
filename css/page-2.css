@@ -594,7 +594,7 @@ header ul li a:hover{
     transform: scale(1.2);
 }
 footer{
-    background:url(../images/bg_03.jpg) center no-repeat fixed;
+    /* background:url(../images/bg_03.jpg) center no-repeat fixed; */
     background-size: cover;
     text-align: center;
     padding: 50px 0;
@@ -611,7 +611,7 @@ footer img{
 }
 footer div{
     margin-left: 5px;
-    color: white;
+    color: gray;
     letter-spacing: 6px;
     font-size: 10px;
 }
@@ -689,7 +689,7 @@ footer div{
     margin-left: 7px;
 }
 .tinyIcon a{
-    color: white;
+    color: gray;
     font-size: 30px;
     padding: 5px 5px 20px;
     display: block;
@@ -697,8 +697,8 @@ footer div{
     transition: .5s;
 }
 .tinyIcon a:hover{
-    transform: scale(1.5);
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.88);
+    transform: scale(1.2);
+    /* text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.88); */
 }
 .tinyIcon a i{
     padding-left: 4px;
@@ -1063,7 +1063,7 @@ footer div{
         text-shadow: inherit;
     }
     footer{
-        background:url(../images/bg_03.jpg) top repeat;
+        /* background:url(../images/bg_03.jpg) top repeat; */
         background-size: contain !important;
     }
     .layout_aria__title{
