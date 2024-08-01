@@ -35,13 +35,13 @@
     color: black;
 }
 .wrapper[data-type="cyber"] .top_btn{
-    background-color: #00fff4;
+    background-color: black;
     border-color: #00fff4;
-    color: black;
+    color: #00fff4;
 }
 .wrapper[data-type="cyber"] .top_btn:hover{
-    color: #00fff4;
-    background-color: black;
+    color: black;
+    background-color: #00fff4;
 }
 .wrapper[data-type="cyber"] .btn:hover, .wrapper[data-type="cyber"] #intro_more_btn.active {
     background-color: #00fff4;
@@ -77,4 +77,21 @@
 }
 .wrapper[data-type="cyber"] header{
     box-shadow: 0 5px 10px #ffffff3d;
+}
+.wrapper[data-type="cyber"] .intrologo img{
+    filter: unset;
+}
+@media screen and (max-width: 1300px) {
+    .wrapper[data-type="cyber"] .btn:hover{
+        background-color: unset;
+        border-color: gray;
+        color: gray;
+    }
+    .wrapper[data-type="cyber"] .top_btn:hover{
+        color: #00fff4;
+        background-color: black;
+    }
+    .wrapper[data-type="cyber"] .layout_aria__bottom a:hover {
+        color: gray;
+    }
 }

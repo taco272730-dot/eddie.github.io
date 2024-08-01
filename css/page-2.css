@@ -239,6 +239,7 @@ header ul li a:hover{
     height: 100%;
     object-fit: cover;
     transition: .5s;
+    filter: sepia(1) hue-rotate(339deg) saturate(2.5);
 }
 /* .intrologo:hover img{
     width: 100%;
@@ -576,10 +577,10 @@ header ul li a:hover{
 }
 
 .top_btn{
-    background-color: rgb(255, 156, 0);
     border-radius: 50%;
     font-size: 41px;
-    color: white;
+    color: rgb(255, 156, 0);
+    background-color: white;
     text-align: center;
     line-height: 50px;
     border: 1px solid rgb(255, 156, 0);
@@ -588,8 +589,8 @@ header ul li a:hover{
     transition: .5s;
 }
 .top_btn:hover{
-    color: rgb(255, 156, 0);
-    background-color: white;
+    color: white;
+    background-color: rgb(255, 156, 0);
     transform: scale(1.2);
 }
 footer{
@@ -945,7 +946,7 @@ footer div{
     /*以下為漢堡選單內容*/
     .transition{
         transition: 0.4s;
-        }
+    }
     .menu{
         display: inline-block;
         cursor: pointer;
@@ -953,52 +954,52 @@ footer div{
         padding: 0 0 0 2px;
         margin: 19px 34px;
         filter: brightness(3);
-        }
-        .menu ul{
-        position: absolute;
-        left:0;
-        top:42px;
-        background:rgba(255,255,255,.8);
-        width:120px;
-        opacity: 0;
-        max-height: 0;
-        overflow: hidden;
-        }
-        .menu.active ul{
-        opacity: 1;
-        max-height: 400px;
-        }
-        .menu ul li a{
-        display: block;
-        padding:10px 12px;
-        
-        }
-        .menu ul li a:hover{
-        background: lightblue;
-        }
-        ul,li{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        }
-        .bar{
-            width: 36px;
-            height: 6px;
-            background: #000000;
-            margin: 6px 0;
-            border-radius: 2px;
-        }
-        .active .bar1{
-            -webkit-transform: rotate(-45deg) translate(-9px, 7px) ;
-            transform: rotate(-45deg) translate(-9px, 7px) ;
-        }
+    }
+    .menu ul{
+    position: absolute;
+    left:0;
+    top:42px;
+    background:rgba(255,255,255,.8);
+    width:120px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    }
+    .menu.active ul{
+    opacity: 1;
+    max-height: 400px;
+    }
+    .menu ul li a{
+    display: block;
+    padding:10px 12px;
     
-        .active .bar2{opacity: 0;}
-    
-        .active .bar3{
-            -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
-            transform: rotate(45deg) translate(-9px, -8px) ;
-        }
+    }
+    .menu ul li a:hover{
+    background: lightblue;
+    }
+    ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    .bar{
+        width: 36px;
+        height: 6px;
+        background: #000000;
+        margin: 6px 0;
+        border-radius: 2px;
+    }
+    .active .bar1{
+        -webkit-transform: rotate(-45deg) translate(-9px, 7px) ;
+        transform: rotate(-45deg) translate(-9px, 7px) ;
+    }
+
+    .active .bar2{opacity: 0;}
+
+    .active .bar3{
+        -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
+        transform: rotate(45deg) translate(-9px, -8px) ;
+    }
 
 
     .nav_option_h5{
@@ -1070,6 +1071,30 @@ footer div{
     }
     .flex-big{
         flex: 1;
+    }
+    .btn:hover{
+        background-color: unset;
+        border-color: gray;
+        color: gray;
+    }
+    .top_btn:hover{
+        color: rgb(255, 156, 0);
+        background-color: white;
+    }
+    .layout_aria__element:hover .layout_aria__head img{
+        transform: scale(1);
+    }
+    .layout_aria__element:hover .layout_aria__title {
+        filter: brightness(1);
+    }
+    .layout_aria__bottom a:hover {
+        color: gray;
+    }
+    .layout_aria__bottom a:before {
+        height: 0;
+    }
+    .web_aria h1 {
+        transform: translateY(0);
     }
 }
 
@@ -1207,10 +1232,6 @@ footer div{
     .web_rightside li, .web_two_part li, .web_three_part li{
         width: 100%;
     }
-    .web_aria h1 {
-        transform: translateY(0);
-    }
-
     .demo {
         margin: 0 auto;
         height: 21vh;
