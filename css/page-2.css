@@ -1273,7 +1273,7 @@ footer div{
         margin-bottom: 11px;
     }
     .layout_aria aside{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .mobile-top{
         order: -1;
