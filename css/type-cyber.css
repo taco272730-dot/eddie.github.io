@@ -90,6 +90,9 @@
 .wrapper[data-type="cyber"] .intrologo{
     background-color: #232323;
 }
+.wrapper[data-type="cyber"] footer img{
+    opacity: 1;
+}
 @media screen and (max-width: 1300px) {
     .wrapper[data-type="cyber"] .btn:hover{
         background-color: unset;
